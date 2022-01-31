@@ -20,8 +20,8 @@ function App() {
       <Header></Header>
       <main>
         <>
-          <Projects />
           <About />
+          <Projects />
           <Contact />
         </>
       </main>

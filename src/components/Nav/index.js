@@ -2,13 +2,6 @@ import React from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
-  // const {
-  //   categories = [],
-  //   setCurrentCategory,
-  //   contactSelected,
-  //   currentCategory,
-  //   setContactSelected,
-  // } = props;
 
   return (
     <nav
@@ -17,11 +10,7 @@ function Nav(props) {
     >
       <div className="container">
         <a className="navbar-brand js-scroll" href="#page-top">
-          <img
-            src={this.state.logo}
-            alt="logo"
-            style={{ maxWidth: "100px" }}
-          />
+          P ICON
         </a>
         <button
           className="navbar-toggler collapsed"
