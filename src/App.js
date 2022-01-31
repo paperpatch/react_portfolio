@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
+
+// import css in order
+
+
+// import js libraries
+
+
+// import components
 import Nav from './components/Nav';
 import About from './components/About';
-import Project from './components/Project';
-import ContactForm from './components/Contact';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -30,13 +38,15 @@ function App() {
         setContactSelected={setContactSelected}
       ></Nav>
       <main>
+          <Portfolio currentCategory={currentCategory}></Portfolio>
+          <About></About>
         {!contactSelected ? (
           <>
-            <Project currentCategory={currentCategory}></Project>
+            <Portfolio currentCategory={currentCategory}></Portfolio>
             <About></About>
           </>
         ) : (
-          <ContactForm></ContactForm>
+          <Contact></Contact>
         )}
       </main>
     </div>
