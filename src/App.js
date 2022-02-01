@@ -11,6 +11,7 @@ import './assets/library/bootstrap/css/bootstrap.min.css';
 import Header from './components/Nav';
 import About from './components/About';
 import Featured from './components/Featured';
+import Other from './components/Other';
 import Contact from './components/Contact';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <>
           <About />
           <Featured />
+          <Other />
           <Contact />
         </>
       </main>
