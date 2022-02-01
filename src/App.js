@@ -10,7 +10,7 @@ import './assets/library/bootstrap/css/bootstrap.min.css';
 // import components
 import Header from './components/Nav';
 import About from './components/About';
-import Projects from './components/Projects';
+import Featured from './components/Featured';
 import Contact from './components/Contact';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <main>
         <>
           <About />
-          <Projects />
+          <Featured />
           <Contact />
         </>
       </main>
