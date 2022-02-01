@@ -4,9 +4,8 @@ import React, { useState } from 'react';
 import './App.css';
 
 // import js libraries
-// jquery
-// popper
-// bootstrap
+import './assets/library/jquery/jquery.min.js';
+import './assets/library/bootstrap/css/bootstrap.min.css';
 
 // import components
 import Header from './components/Nav';
