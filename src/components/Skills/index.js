@@ -67,7 +67,7 @@ const PhotoList = ({ category }) => {
       <div className="flex-row">
         {currentPhotos.map((image, i) => (
           <img
-            src={require(`../../assets/icons/${category}/${i}.jpg`)}
+            src={require(`../../assets/icons/${category}/${i}.svg`)}
             alt={image.name}
             className="col code-icon"
             key={image.name}
