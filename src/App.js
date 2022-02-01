@@ -13,11 +13,12 @@ import About from './components/About';
 import Featured from './components/Featured';
 import Other from './components/Other';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div>
-      <Header></Header>
+      <Header />
       <main>
         <>
           <About />
@@ -26,6 +27,7 @@ function App() {
           <Contact />
         </>
       </main>
+      <Footer />
     </div>
   );
 }
