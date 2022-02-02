@@ -1,8 +1,8 @@
 import React from "react";
 import $ from "jquery";
 
-import logo1 from "../img/male1.png";
-import logo2 from "../img/male.png";
+import logo1 from "../../assets/icons/logo/pc-logo1.png";
+import logo2 from "../../assets/icons/logo/pc-logo2.png";
 
 class Navbar extends React.Component {
   constructor() {
@@ -22,10 +22,10 @@ class Navbar extends React.Component {
       }
     });
 
-    $("body").scrollspy({
-      target: "#mainNav",
-      offset: navHeight
-    });
+    // $("body").scrollspy({
+    //   target: "#mainNav",
+    //   offset: navHeight
+    // });
 
     $(".js-scroll").on("click", function() {
       $(".navbar-collapse").collapse("hide");
