@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // import css in order
 import './App.css';
@@ -8,7 +8,7 @@ import './assets/library/jquery/jquery.min.js';
 import './assets/library/bootstrap/css/bootstrap.min.css';
 
 // import components
-import Header from './components/Nav';
+import Navbar from './components/Nav';
 import Intro from './components/Intro';
 import About from './components/About';
 import Featured from './components/Featured';
@@ -19,7 +19,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div>
-      <Header />
+      <Navbar />
       <main>
         <>
           <Intro />
