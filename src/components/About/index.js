@@ -1,7 +1,100 @@
 import React from 'react'
 import profileImage from "../../assets/profile/profile-pic-2.webp";
+import icon_html from '../../assets/icons/frontend/0.svg'
+import icon_css from '../../assets/icons/frontend/1.svg'
+import icon_javascript from '../../assets/icons/frontend/2.svg'
+import icon_bootstrap from '../../assets/icons/frontend/3.svg'
+import icon_handlebars from '../../assets/icons/frontend/4.svg'
+import icon_react from '../../assets/icons/frontend/5.svg'
+import icon_nodejs from '../../assets/icons/backend/0.svg'
+import icon_jest from '../../assets/icons/backend/1.svg'
+import icon_mysql from '../../assets/icons/backend/2.svg'
+import icon_mongo from '../../assets/icons/backend/3.svg'
+import icon_heroku from '../../assets/icons/backend/4.svg'
+import icon_bash from '../../assets/icons/tools/0.svg'
+import icon_github from '../../assets/icons/tools/1.svg'
+import icon_npm from '../../assets/icons/tools/2.svg'
 
 function About() {
+
+  const skills = {
+    frontend: [
+      {
+        id: "html",
+        name: "HTML",
+        image: icon_html
+      },
+      {
+        id: "css",
+        name: "CSS",
+        image: icon_css
+      },
+      {
+        id: "javascript",
+        name: "JavaScript",
+        image: icon_javascript
+      },
+      {
+        id: "bootstrap",
+        name: "Bootstrap",
+        image: icon_bootstrap
+      },
+      {
+        id: "handlebars",
+        name: "Handlebars",
+        image: icon_handlebars
+      },
+      {
+        id: "react",
+        name: "React",
+        image: icon_react
+      }
+    ],
+    backend: [
+      {
+        id: "nodejs",
+        name: "NodeJS",
+        image: icon_nodejs
+      },
+      {
+        id: "jest",
+        name: "Jest",
+        image: icon_jest
+      },
+      {
+        id: "mysql",
+        name: "MySQL",
+        image: icon_mysql
+      },
+      {
+        id: "mongodb",
+        name: "MongoDB",
+        image: icon_mongo
+      },
+      {
+        id: "heroku",
+        name: "Heroku",
+        image: icon_heroku
+      },
+    ],
+    tools: [
+      {
+        id: "gitbash",
+        name: "Git Bash",
+        image: icon_bash
+      },
+      {
+        id: "github",
+        name: "GitHub",
+        image: icon_github
+      },
+      {
+        id: "npm",
+        name: "npm",
+        image: icon_npm
+      },
+    ]
+  }
 
   return (
     <section id="about" className="about fade-in">
@@ -31,26 +124,42 @@ function About() {
       <div className="container">
         <div className="row row-cols-auto">
           <h3 className="col my-auto">Front End:</h3>
-          <img className="col code-icon" src="./assets/images/icons/html-1.svg" alt="html5" />
-          <img className="col code-icon" src="./assets/images/icons/css-3.svg" alt="css3" />
-          <img className="col code-icon" src="./assets/images/icons/javascript-1.svg" alt="javascript" />
-          <img className="col code-icon" src="./assets/images/icons/bootstrap-5-1.svg" alt="bootstrap5" />
-          <img className="col code-icon" src="./assets/images/icons/handlebars-1.svg" alt="handlebars-1" />
-          <img className="col code-icon" src="./assets/images/icons/react-2.svg" alt="react" />
+            {skills.frontend.map( frontend => {
+              return (
+                <React.Fragment key={frontend.id}>
+                  <div className="row">
+                    <img className="col code-icon" src={frontend.image} alt={frontend.name} />
+                    <span>{frontend.name}</span>
+                  </div>
+                </React.Fragment>
+              )
+            })}
         </div>
         <div className="row row-cols-auto">
           <h3 className="col my-auto">Back End:</h3>
-          <img className="col code-icon" src="./assets/images/icons/nodejs-1.svg" alt="nodeJS" />
-          <img className="col code-icon" src="./assets/images/icons/jest-2.svg" alt="jest" />
-          <img className="col code-icon" src="./assets/images/icons/mysql-6.svg" alt="mySQL" />
-          <img className="col code-icon" src="./assets/images/icons/mongodb-icon-1.svg" alt="mongoDB" />
-          <img className="col code-icon" src="./assets/images/icons/heroku-4.svg" alt="heroku" />
+          {skills.backend.map( backend => {
+              return (
+                <React.Fragment key={backend.id}>
+                  <div className="row">
+                    <img className="col code-icon" src={backend.image} alt={backend.name} />
+                    <span>{backend.name}</span>
+                  </div>
+                </React.Fragment>
+              )
+            })}
         </div>
         <div className="row row-cols-auto">
           <h3 className="col my-auto">Tools:</h3>
-          <img className="col code-icon" src="./assets/images/icons/git-bash.svg" alt="git-bash" />
-          <div className="col code-icon"><i className="fab fa-github fa-3x"></i></div>
-          <img className="col code-icon" src="./assets/images/icons/npm.svg" alt="npm" />
+          {skills.tools.map( tools => {
+              return (
+                <React.Fragment key={tools.id}>
+                  <div className="row">
+                    <img className="col code-icon" src={tools.image} alt={tools.name} />
+                    <span>{tools.name}</span>
+                  </div>
+                </React.Fragment>
+              )
+            })}
         </div>
       </div>
     </section>

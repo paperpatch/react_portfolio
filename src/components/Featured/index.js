@@ -1,4 +1,7 @@
 import React from 'react';
+import img_openfridge from '../../assets/projects/open_fridge_screenshot.webp'
+import img_trackend from '../../assets/projects/trackend-screenshot.webp'
+import img_runbuddy from '../../assets/projects/run-buddy-screenshot.webp'
 
 function Featured() {
 
@@ -9,7 +12,7 @@ function Featured() {
         name: "Open Fridge",
         github: "https://github.com/paperpatch/open_fridge",
         deploy: "https://paperpatch.github.io/open_fridge/",
-        image: "./assets/images/screenshots/open_fridge_screenshot.webp",
+        image: img_openfridge,
         alt: "Open Fridge Project",
         description: "Recipe dashboard that provides cooking instructions and nutritional value for any recipes you need. Uses Tasty API and Ninjas Nutritional API for responsive and dynamic user inputs.",
         skills: "Foundation CSS JS jQuery API"
@@ -19,7 +22,7 @@ function Featured() {
         name: "Trackend",
         github: "https://github.com/paperpatch/trackend",
         deploy: "https://trackend-project.herokuapp.com/",
-        image: "./assets/images/screenshots/trackend-screenshot.webp",
+        image: img_trackend,
         alt: "Trackend Project",
         description: "Issue Tracker Ticketing System with a CMS (Content Management System) style. Uses authentication and MVC paradigm, using Handlebars.js as template, Sequelize as ORM (Object-Relational Mapping) and Express-Session for authentication.",
         skills: "Bootstrap-Table Handlebars Sequelize MySQL Express API Heroku"
@@ -29,7 +32,7 @@ function Featured() {
         name: "Runbuddy",
         github: "https://github.com/paperpatch",
         deploy: "https://github.com/paperpatch",
-        image: "./assets/images/screenshots/run-buddy-screenshot.webp",
+        image: img_runbuddy,
         alt: "Tutorial",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas possimus numquam dolores dignissimos, libero labore facilis minima hic soluta aliquid error excepturi harum esse ab, culpa in quibusdam molestiae beatae?",
         skills: "Boostrap JS Jquery"

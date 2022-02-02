@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const PhotoList = ({ category }) => {
+const Skills = ({ category }) => {
   const [photos] = useState([
     {
       name: 'HTML',
@@ -64,18 +64,19 @@ const PhotoList = ({ category }) => {
 
   return (
     <div>
-      <div className="flex-row">
-        {currentPhotos.map((image, i) => (
+      {currentPhotos.map((image, i) => (
+        <div>
           <img
             src={require(`../../assets/icons/${category}/${i}.svg`)}
             alt={image.name}
             className="col code-icon"
             key={image.name}
           />
-        ))}
-      </div>
+          <div>{image.name}</div>
+        </div>
+      ))}
     </div>
   );
 };
 
-export default PhotoList;
+export default Skills;
