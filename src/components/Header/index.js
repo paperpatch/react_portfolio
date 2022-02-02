@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Typical from "react-typical";
+import $ from "jquery";
 import Switch from "react-switch";
 
 import Nav from '../Nav';
