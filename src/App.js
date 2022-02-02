@@ -9,6 +9,7 @@ import './assets/library/bootstrap/css/bootstrap.min.css';
 
 // import components
 import Header from './components/Nav';
+import Intro from './components/Intro';
 import About from './components/About';
 import Featured from './components/Featured';
 import Other from './components/Other';
@@ -21,6 +22,7 @@ function App() {
       <Header />
       <main>
         <>
+          <Intro />
           <About />
           <Featured />
           <Other />

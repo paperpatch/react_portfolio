@@ -65,7 +65,7 @@ function Other() {
 
           {projects.other.map( other => { 
             return (
-              <>
+              <React.Fragment key={other.id}>
               <div className="card col-4 project-card justify-content-between">
                 <span>
                   <div className="card-body col-12">
@@ -88,7 +88,7 @@ function Other() {
                   </div>
                 </span>
               </div>
-              </>
+              </React.Fragment>
             )
           })}
         </div>
