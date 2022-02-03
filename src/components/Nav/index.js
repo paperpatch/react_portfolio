@@ -79,59 +79,40 @@ class Navbar extends React.Component {
     });
   }
 
+  onClick = (e) => {
+    e.preventDefault();
+  }
+
   render() {
     return (
-      <nav
-        className="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
-        id="mainNav"
-      >
-        <div className="container">
-          <a className="navbar-brand js-scroll" href="#page-top">
-            <img
-              src={this.state.logo}
-              alt="logo"
-              style={{ maxWidth: "100px" }}
-            />
-          </a>
-          <button
-            className="navbar-toggler collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarDefault"
-            aria-controls="navbarDefault"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <div
-            className="navbar-collapse collapse justify-content-end"
-            id="navbarDefault"
-          >
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link js-scroll active" href="#home">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#about">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#work">
-                  Work
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#contact">
-                  Contact
-                </a>
-              </li>
-            </ul>
+      <nav className="navbar navbar-expand-sm navbar-dark sticky-top" id="navbar">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="./index.html">Patrick</a>
+
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav ms-auto">
+              <a className="nav-item nav-link active" href="#about">About</a>
+              <a className="nav-item nav-link active" href="#experience">Experience</a>
+              <a className="nav-item nav-link active" href="#feature">Projects</a>
+              <a className="nav-item nav-link active" href="#contact">Contact</a>
+              <a className="nav-item btn btn-lg" role="button" data-bs-toggle="modal" data-bs-target="#resumeModal">Resume</a>
+            </div>
+          </div>
+        </div>
+      
+
+        <div className="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+          <div className="modal-dialog modal-dialog-scrollable modal-xl">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="resumeModalLabel">Resume</h5>
+                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <embed src="./assets/images/PATRICK_CHEN_RESUME.pdf" type="application/pdf" width="100%" height="100%" />
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
