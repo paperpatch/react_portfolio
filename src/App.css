@@ -6,7 +6,7 @@
   --darkblue: #001d2c;
   --white: #f5faf9;
   --grey: #c4c4c4da;
-  /* for social media icons */
+  /* SOCIAL MEDIA ICONS*/
   --timing: 265ms;
   --iconColor: #00b5f5;
   --accent: #003a8f;
@@ -65,7 +65,7 @@ body {
   padding: 0px 3rem;
 }
 
-/* Resume Modal Section */
+/* RESUME MODAL */
 
 .modal-dialog {
   width: 100%;
@@ -83,7 +83,59 @@ body {
   height: 100%;
 }
 
-/* Intro Section */
+/* FONTS */
+
+
+
+/* UTILITIES */
+
+.intro a,
+.jobs a,
+.feature a,
+.contacts a,
+.side-email a,
+.btn {
+  color: var(--cyan);
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+.intro a:hover,
+.jobs a:hover,
+.feature a:hover,
+.project-card a:hover,
+.contacts a:hover,
+.side-email a:hover,
+.btn:hover {
+  color: var(--darkcyan);
+}
+
+/* .fade-in {
+  opacity: 0;
+  transform: translateY(2vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+} */
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+/* #goBackTopBtn {
+  position: fixed;
+  left: 85%;
+  bottom: 2rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: var(--cyan);
+  display: none;
+} */
+
+/* INTRO */
 
 .intro {
   height: 100vh;
@@ -137,54 +189,7 @@ li {
   height: auto;
 }
 
-/* Utilities */
-
-/* .intro a,
-.jobs a,
-.feature a,
-.contacts a,
-.side-email a,
-.btn {
-  color: var(--cyan);
-  text-decoration: none;
-  transition: all 0.5s ease-out;
-}
-
-.intro a:hover,
-.jobs a:hover,
-.feature a:hover,
-.project-card a:hover,
-.contacts a:hover,
-.side-email a:hover,
-.btn:hover {
-  color: var(--darkcyan);
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(2vh);
-  visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
-  will-change: opacity, visibility;
-}
-.fade-in.is-visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
-} */
-
-/* #goBackTopBtn {
-  position: fixed;
-  left: 85%;
-  bottom: 2rem;
-  border: 2px solid black;
-  border-radius: 50%;
-  padding: 0.5rem;
-  background-color: var(--cyan);
-  display: none;
-} */
-
-/* About Section */
+/* ABOUT */
 
 section {
   margin: 0 auto;
@@ -238,7 +243,7 @@ section {
   margin: 0.5rem;
 }
 
-/* Work and Jobs Section */
+/* WORK */
 
 .jobs {
   height: 100%;
@@ -276,7 +281,7 @@ section {
   left: -10px;
 }
 
-/* Featured Projects Section */
+/* FEATURED */
 
 .feature {
   width: 60%;
@@ -335,7 +340,7 @@ section {
   transform: scale(1.03);
 }
 
-/* Other Projects Section */
+/* OTHER PROJECTS */
 
 .project-card {
   background-color: var(--blue);
@@ -371,7 +376,7 @@ section {
   font-size: 15px;
 }
 
-/* Contact Section */
+/* CONTACT */
 
 .contacts {
   margin: 0 auto;
@@ -395,7 +400,7 @@ section {
   transform: scale(1.1);
 }
 
-/* Footer Section */
+/* FOOTER */
 
 footer {
   background: var(--darkblue);

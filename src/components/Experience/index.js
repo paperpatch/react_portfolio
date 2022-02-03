@@ -4,14 +4,14 @@ function Experience() {
 
   return (
 
-    <section id="experience" class="jobs fade-in">
-      <h2 class="title">Experience</h2>
+    <section id="experience" className="jobs fade-in">
+      <h2 className="title">Experience</h2>
 
       <article>
         <h3>
           Developer @ <a href="https://bootcamp.uconn.edu/" target="_blank" rel="noreferrer">UConn Bootcamp</a>
         </h3>
-        <p class="range">September 2021 - Present</p> <br />
+        <p className="range">September 2021 - Present</p> <br />
         <ul>
           <li>
             Worked with a variety of languages, platforms, frameworks, and content management systems such as
@@ -30,7 +30,7 @@ function Experience() {
         <h3>
           Engineer @ <a href="https://www.gargengineering.com/" target="_blank" rel="noreferrer">Garg Consulting Services</a>
         </h3>
-        <p class="range">April 2016 - September 2021</p> <br />
+        <p className="range">April 2016 - September 2021</p> <br />
         <ul>
           <li>
             Inspection and documentation of all construction activities, working with Amtrak and Metro North force
@@ -53,7 +53,7 @@ function Experience() {
         <h3>
           Student @ <a href="https://uconn.edu/" target="_blank" rel="noreferrer">University of Connecticut</a>
         </h3>
-        <p class="range">Winter 2015</p><br/>
+        <p className="range">Winter 2015</p><br/>
         <ul>
           <li>
             Designed sidewalk for predestrians using AutoCAD. Performed calculations on culvert design for improvements on

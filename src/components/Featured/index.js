@@ -63,7 +63,7 @@ function Featured() {
                     </div>
                   </div>
                   <div className="col-12 col-lg-7">
-                    <a href={featured.link} target="_blank" rel="noreferrer">
+                    <a href={featured.deploy} target="_blank" rel="noreferrer">
                       <img src={featured.image} className="rounded float-end" alt={featured.alt} />
                     </a>
                   </div>
