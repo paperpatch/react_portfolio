@@ -1,4 +1,5 @@
 import React from "react"
+import { Github, Folder, BoxArrowUpRight } from 'react-bootstrap-icons'
 
 function Other() {
 
@@ -70,8 +71,8 @@ function Other() {
                 <span>
                   <div className="card-body col-12">
                     <div className="row">
-                      <i className="col-10 bi bi-folder fa-3x"></i>
-                      <a href={other.deploy} className="col-2" target="_blank" rel="noreferrer"><i className="bi bi-box-arrow-up-right fa-2x"></i></a>
+                      <Folder className="col-10" size={56}/>
+                      <a href={other.deploy} className="col-2" target="_blank" rel="noreferrer"><BoxArrowUpRight size={42}/></a>
                     </div>
                     <a href={other.deploy} target="_blank" rel="noreferrer">
                       <h5 className="card-title">{other.name}</h5>
@@ -83,7 +84,7 @@ function Other() {
                   <div className="row">
                     <p className="col-10 text-sub">{other.skills}</p>
                     <a href={other.github} className="card-link col-2" target="_blank" rel="noreferrer">
-                      <i className="bi bi-github fa-lg"></i>
+                      <Github size={32} />
                     </a>
                   </div>
                 </span>

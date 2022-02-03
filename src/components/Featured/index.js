@@ -1,4 +1,5 @@
 import React from 'react';
+import { Github } from 'react-bootstrap-icons'
 import img_openfridge from '../../assets/projects/open_fridge_screenshot.webp'
 import img_trackend from '../../assets/projects/trackend-screenshot.webp'
 import img_runbuddy from '../../assets/projects/run-buddy-screenshot.webp'
@@ -53,11 +54,11 @@ function Featured() {
                   <div className="col-12 col-lg-5">
                     <div className="card-header">Featured Project</div>
                     <div className="card-body">
-                      <h3 className="card-title"><a href={featured.link} target="_blank" rel="noreferrer">{featured.name}</a></h3>
+                      <h3 className="card-title"><a href={featured.deploy} target="_blank" rel="noreferrer">{featured.name}</a></h3>
                       <p className="card-text">{featured.description}</p>
                       <p><small className="text-sub">{featured.skills}</small></p>
                       <a href={featured.github} target="_blank" rel="noreferrer">
-                        <i className="bi bi-github fa-lg"></i>
+                        <Github className="bi bi-github fa-lg"></Github>
                       </a>
                     </div>
                   </div>
