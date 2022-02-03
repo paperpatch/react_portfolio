@@ -12,6 +12,7 @@ import './App.css';
 import Navbar from './components/Nav';
 import Intro from './components/Intro';
 import About from './components/About';
+import Experience from './components/Experience';
 import Featured from './components/Featured';
 import Other from './components/Other';
 import Contact from './components/Contact';
@@ -25,6 +26,7 @@ function App() {
         <>
           <Intro />
           <About />
+          <Experience />
           <Featured />
           <Other />
           <Contact />
