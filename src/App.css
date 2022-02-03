@@ -67,8 +67,20 @@ body {
 
 /* Resume Modal Section */
 
-.modal embed {
-  height: 100vh;
+.modal-dialog {
+  width: 100%;
+}
+
+.modal-header {
+  color: black;
+}
+
+.modal-content {
+  height: 90vh;
+}
+
+.pdfobject-container {
+  height: 100%;
 }
 
 /* Intro Section */
@@ -604,5 +616,13 @@ footer h4:hover {
 @media screen and (max-width: 576px) {
   .dropdown-hide {
     display: inline-block;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 90vw;
+      margin: 1.75rem auto;
+      padding: 2rem;
   }
 }

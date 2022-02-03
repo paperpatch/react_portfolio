@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Modal } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 
+import { PDFObject } from 'react-pdfobject';
+import resume from "../../assets/resume/PATRICK_CHEN_RESUME.pdf";
+
 function Resume() {
   const [show, setShow] = useState(false);
 
@@ -14,8 +17,16 @@ function Resume() {
         Resume
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+      <Modal
+        show={show}
+        onHide={handleClose}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Resume</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <PDFObject url={resume}/>
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
