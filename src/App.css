@@ -236,13 +236,14 @@ section {
 }
 
 .code-icon {
-  width: 100px;
+  width: 100%;
   height: 60px;
   margin: 0.5rem;
 }
 
 .skill-name {
-  width: 500px;
+  width: 100%;
+  text-align: center;
 }
 
 /* WORK */

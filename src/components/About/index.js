@@ -131,8 +131,8 @@ function About() {
             return (
               <React.Fragment key={frontend.id}>
                   <div className="col">
-                    <img className="row code-icon" src={frontend.image} alt={frontend.name} />
-                    <span className="row">{frontend.name}</span>
+                    <img className="code-icon" src={frontend.image} alt={frontend.name} />
+                    <label className="skill-name">{frontend.name}</label>
                   </div>
               </React.Fragment>
               )
@@ -146,8 +146,8 @@ function About() {
               return (
                 <React.Fragment key={backend.id}>
                   <div className="col">
-                    <img className="row code-icon" src={backend.image} alt={backend.name} />
-                    <span className="row">{backend.name}</span>
+                    <img className="code-icon" src={backend.image} alt={backend.name} />
+                    <label className="skill-name">{backend.name}</label>
                   </div>
                 </React.Fragment>
               )
@@ -162,7 +162,7 @@ function About() {
                     <React.Fragment key={tools.id}>
                       <div className="col">
                         <img className="code-icon" src={tools.image} alt={tools.name} />
-                        <span>{tools.name}</span>
+                        <label className="skill-name">{tools.name}</label>
                       </div>
                     </React.Fragment>
                   )
