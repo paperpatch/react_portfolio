@@ -122,44 +122,53 @@ function About() {
       </div>
       <h2 className="title">Skills</h2>
       <div className="container">
-        <div className="row row-cols-auto">
-          <h3 className="col my-auto">Front End:</h3>
-            {skills.frontend.map( frontend => {
-              return (
-                <React.Fragment key={frontend.id}>
-                  <div className="row">
-                    <img className="col code-icon" src={frontend.image} alt={frontend.name} />
-                    <span>{frontend.name}</span>
+        <div className="row">
+
+          <h3 className="row mt-2">Front End:</h3>
+          <hr/>
+          <div className="row">
+          {skills.frontend.map( frontend => {
+            return (
+              <React.Fragment key={frontend.id}>
+                  <div className="col">
+                    <img className="row code-icon" src={frontend.image} alt={frontend.name} />
+                    <span className="row">{frontend.name}</span>
                   </div>
-                </React.Fragment>
+              </React.Fragment>
               )
             })}
-        </div>
-        <div className="row row-cols-auto">
-          <h3 className="col my-auto">Back End:</h3>
-          {skills.backend.map( backend => {
+          </div>
+            
+          <h3 className="row mt-5">Back End:</h3>
+          <hr/>
+          <div className="row">
+            {skills.backend.map( backend => {
               return (
                 <React.Fragment key={backend.id}>
-                  <div className="row">
-                    <img className="col code-icon" src={backend.image} alt={backend.name} />
-                    <span>{backend.name}</span>
+                  <div className="col">
+                    <img className="row code-icon" src={backend.image} alt={backend.name} />
+                    <span className="row">{backend.name}</span>
                   </div>
                 </React.Fragment>
               )
             })}
-        </div>
-        <div className="row row-cols-auto">
-          <h3 className="col my-auto">Tools:</h3>
-          {skills.tools.map( tools => {
-              return (
-                <React.Fragment key={tools.id}>
-                  <div className="row">
-                    <img className="col code-icon" src={tools.image} alt={tools.name} />
-                    <span>{tools.name}</span>
-                  </div>
-                </React.Fragment>
-              )
-            })}
+          </div>
+
+          <h3 className="row mt-5">Tools:</h3>
+          <hr/>
+          <div className="row">
+              {skills.tools.map( tools => {
+                  return (
+                    <React.Fragment key={tools.id}>
+                      <div className="col">
+                        <img className="code-icon" src={tools.image} alt={tools.name} />
+                        <span>{tools.name}</span>
+                      </div>
+                    </React.Fragment>
+                  )
+                })}
+          </div>
+
         </div>
       </div>
     </section>

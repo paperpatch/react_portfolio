@@ -67,6 +67,14 @@ body {
 
 /* RESUME MODAL */
 
+.resume-btn {
+  background-color: var(--darkblue);
+}
+
+.resume-btn:hover {
+  background-color: var(--darkblue);
+}
+
 .modal-dialog {
   width: 100%;
 }
@@ -179,16 +187,6 @@ li {
   padding-bottom: 10%;
 }
 
-.code-icon {
-  width: 50px;
-  height: 50px;
-}
-
-.feature-project img {
-  width: 600px;
-  height: auto;
-}
-
 /* ABOUT */
 
 section {
@@ -241,6 +239,10 @@ section {
   width: 100px;
   height: 60px;
   margin: 0.5rem;
+}
+
+.skill-name {
+  width: 500px;
 }
 
 /* WORK */
@@ -445,7 +447,7 @@ footer h4:hover {
   color: var(--darkcyan);
 }
 
-.side-email {
+/* .side-email {
   position: fixed;
   left: 85%;
   bottom: 10%;
@@ -455,13 +457,13 @@ footer h4:hover {
 .side-email a {
   color: var(--grey);
   font-size: 1.2rem;
-}
+} */
 
-.line-1 {
+/* .line-1 {
   width: 400px;
   border-bottom: 1px solid white;
   display: block;
-}
+} */
 
 /* Social Media Icons */
 

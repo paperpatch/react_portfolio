@@ -13,7 +13,7 @@ function Resume() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button className="resume-btn" onClick={handleShow}>
         Resume
       </Button>
 
