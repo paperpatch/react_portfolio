@@ -51,27 +51,25 @@ function ContactForm() {
         <p>I am looking for new opportunities to grow. My inbox is open.</p>
         <p>Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
       
-        <form ref={form} onSubmit={sendEmail}>
+        <form className="form" ref={form} onSubmit={sendEmail}>
           <div>
-            <label htmlFor="name">Name:</label>
-            <input type="text" defaultValue={name} onBlur={handleChange} name="user_name"/>
+            <input className="form-input" placeholder="Your Name" type="text" defaultValue={name} onBlur={handleChange} name="user_name"/>
           </div>
           <div>
-            <label htmlFor="email">Email address:</label>
-            <input type="email" defaultValue={email} name="user_email" onBlur={handleChange} />
+            <input className="form-input" placeholder="Your Email" type="email" defaultValue={email} name="user_email" onBlur={handleChange} />
           </div>
           <div>
-            <label htmlFor="message">Message:</label>
-            <textarea name="message" defaultValue={message} rows="5" onBlur={handleChange} />
+            <textarea className="form-input" placeholder="Your Message" name="message" defaultValue={message} rows="5" onBlur={handleChange} />
           </div>
           {errorMessage && (
             <div>
               <p className="error-text">{errorMessage}</p>
             </div>
           )}
-          <button data-testid="button" type="submit">Submit</button>
+          <button className="form-button" data-testid="button" type="submit">Submit</button>
         </form>
       </div>
+      
     </section>
     );
 }

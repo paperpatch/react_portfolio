@@ -400,11 +400,31 @@ section {
   transform: scale(1.1);
 }
 
+.form {
+  margin: 5% 0 0 0;
+}
+
+.form-input {
+  width: 500px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.form-button {
+  width: 100px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--cyan);
+  border-color: var(--darkcyan);
+}
+
 /* FOOTER */
 
 footer {
   background: var(--darkblue);
-  padding: 5rem 2rem 2rem 2rem;
+  padding: 2rem 2rem 2rem 2rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
