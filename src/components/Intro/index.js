@@ -9,9 +9,9 @@ function Intro() {
       <span className="intro-text-slider">
         <Typed
           strings={[
-            "Full Stack Developer",
+            "Developer",
             "Problem Solver",
-            "Engineer at heart"
+            "Engineer"
           ]}
           typeSpeed={60}
           backSpeed={30}
@@ -19,7 +19,7 @@ function Intro() {
           loop
         />
       </span>
-      <p className="intro-link">Currently at <a href="https://bootcamp.uconn.edu/" target="_blank"
+      <p className="text-sub">Currently at <a href="https://bootcamp.uconn.edu/" target="_blank"
           rel="noreferrer">UConn Bootcamp</a>.
       </p>
       <div className="mt-auto arrow">
