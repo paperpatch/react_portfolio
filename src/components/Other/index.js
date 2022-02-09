@@ -67,27 +67,23 @@ function Other() {
           {projects.other.map( other => { 
             return (
               <React.Fragment key={other.id}>
-              <div className="card col-4 project-card justify-content-between">
-                <span>
-                  <div className="card-body col-12">
-                    <div className="row">
-                      <Folder className="col-10" size={56}/>
-                      <a href={other.deploy} className="col-2" target="_blank" rel="noreferrer"><BoxArrowUpRight size={42}/></a>
-                    </div>
-                    <a href={other.deploy} target="_blank" rel="noreferrer">
-                      <h5 className="card-title">{other.name}</h5>
-                    </a>
-                    <p className="card-text">{other.description}</p>
+              <div className="card col-4 project-card">
+                <div className="card-body col-12">
+                  <div className="row justify-content-between">
+                    <Folder className="col-3" size={56}/>
+                    <a href={other.deploy} className="col-2" target="_blank" rel="noreferrer"><BoxArrowUpRight size={42}/></a>
                   </div>
-                </span>
-                <span>
-                  <div className="row">
-                    <p className="col-10 text-sub">{other.skills}</p>
-                    <a href={other.github} className="card-link col-2" target="_blank" rel="noreferrer">
-                      <Github size={32} />
-                    </a>
-                  </div>
-                </span>
+                  <a href={other.deploy} target="_blank" rel="noreferrer">
+                    <h5 className="card-title">{other.name}</h5>
+                  </a>
+                  <p className="card-text">{other.description}</p>
+                </div>
+                <div className="row">
+                  <p className="col-10 text-skill">{other.skills}</p>
+                  <a href={other.github} className="card-link col-2" target="_blank" rel="noreferrer">
+                    <Github size={32} />
+                  </a>
+                </div>
               </div>
               </React.Fragment>
             )
