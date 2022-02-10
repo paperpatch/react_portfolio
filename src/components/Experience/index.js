@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, Hourglass } from 'react-bootstrap-icons';
+import { Briefcase, HourglassBottom } from 'react-bootstrap-icons';
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -42,7 +42,7 @@ function Experience() {
 
   return (
 
-    <section id="experience" className="jobs fade-in">
+    <section id="experience" className="jobs">
       <h2 className="title">Experience</h2>
       <VerticalTimeline>
         {work.company.map( data => {
@@ -75,7 +75,7 @@ function Experience() {
           })}
         <VerticalTimelineElement
           iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-          icon={<Hourglass className="bi bi-hourglass fa-lg"></Hourglass>}
+          icon={<HourglassBottom className="bi bi-hourglass-bottom fa-lg"></HourglassBottom>}
         />
       </VerticalTimeline>
     </section>

@@ -45,7 +45,7 @@ function ContactForm() {
   }
 
   return (
-    <section id="contact" className="fade-in">
+    <section id="contact">
       <div className="contacts">
         <h1 data-testid="h1tag" className="title">Get in Touch</h1>
         <p>I am looking for new opportunities to grow. My inbox is open.</p>

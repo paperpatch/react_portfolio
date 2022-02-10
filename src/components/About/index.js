@@ -11,9 +11,9 @@ import icon_jest from '../../assets/icons/backend/1.svg'
 import icon_mysql from '../../assets/icons/backend/2.svg'
 import icon_mongo from '../../assets/icons/backend/3.svg'
 import icon_heroku from '../../assets/icons/backend/4.svg'
-import icon_bash from '../../assets/icons/tools/0.svg'
-import icon_github from '../../assets/icons/tools/1.svg'
-import icon_npm from '../../assets/icons/tools/2.svg'
+import icon_bash from '../../assets/icons/tools/icon-bash.svg'
+import icon_github from '../../assets/icons/tools/icon-github-bootstrap.svg'
+import icon_npm from '../../assets/icons/tools/icon-npm.svg'
 
 function About() {
 
@@ -97,7 +97,7 @@ function About() {
   }
 
   return (
-    <section id="about" className="about fade-in">
+    <section id="about" className="about">
       <h2 className="title">
         About Me
       </h2>
@@ -126,7 +126,7 @@ function About() {
 
           <h3 className="row mt-2">Front End:</h3>
           <hr/>
-          <div className="row">
+          <div className="row ">
           {skills.frontend.map( frontend => {
             return (
               <React.Fragment key={frontend.id}>
@@ -141,7 +141,7 @@ function About() {
             
           <h3 className="row mt-5">Back End:</h3>
           <hr/>
-          <div className="row">
+          <div className="row row-cols-auto">
             {skills.backend.map( backend => {
               return (
                 <React.Fragment key={backend.id}>
@@ -156,7 +156,7 @@ function About() {
 
           <h3 className="row mt-5">Tools:</h3>
           <hr/>
-          <div className="row">
+          <div className="row row-cols-auto">
               {skills.tools.map( tools => {
                   return (
                     <React.Fragment key={tools.id}>
