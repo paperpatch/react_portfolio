@@ -1,4 +1,5 @@
 import React from 'react';
+import { Briefcase, Hourglass } from 'react-bootstrap-icons';
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -53,7 +54,7 @@ function Experience() {
                   contentArrowStyle={{ borderRight: '7px solid  #0dcaf0' }}
                   date={data.dates}
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                  icon={<i className="fab fa-angular experience-icon"></i>}
+                  icon={<Briefcase className="bi bi-briefcase fa-lg"></Briefcase>}
                 >
                   <h3 className="vertical-timeline-element-title">{data.name}</h3>
                   <h4 className="vertical-timeline-element-subtitle">{data.role}</h4>
@@ -74,7 +75,7 @@ function Experience() {
           })}
         <VerticalTimelineElement
           iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-          icon={<i className="fab fa-angular experience-icon"></i>}
+          icon={<Hourglass className="bi bi-hourglass fa-lg"></Hourglass>}
         />
       </VerticalTimeline>
     </section>
