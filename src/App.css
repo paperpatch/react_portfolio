@@ -350,6 +350,22 @@ section {
   margin-bottom: 10px;
 }
 
+.other-projects-btn {
+  width: 200px;
+  margin-top: 50px;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--cyan);
+  border-color: var(--darkcyan);
+}
+
+.other-projects-btn:hover {
+  color: white;
+  background-color: var(--darkcyan);
+}
+
 /* CONTACT */
 
 .contacts {
@@ -387,6 +403,11 @@ section {
   color: white;
   background-color: var(--cyan);
   border-color: var(--darkcyan);
+  transition: all 0.5s ease-out;
+}
+
+.form-button:hover {
+  background-color: var(--darkcyan);
 }
 
 /* FOOTER */
@@ -413,24 +434,6 @@ footer h4 {
 footer h4:hover {
   color: var(--darkcyan);
 }
-
-/* .side-email {
-  position: fixed;
-  left: 85%;
-  bottom: 10%;
-  transform: rotate(90deg);
-}
-
-.side-email a {
-  color: var(--grey);
-  font-size: 1.2rem;
-} */
-
-/* .line-1 {
-  width: 400px;
-  border-bottom: 1px solid white;
-  display: block;
-} */
 
 /* Social Media Icons */
 
