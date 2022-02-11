@@ -29,20 +29,19 @@ body {
   box-shadow: 0 3px 10px black;
 }
 
-.navbar-brand {
+.brand {
+  color: white !important;
   font-size: 30px;
-  transition: all 0.5s ease-out;
 }
 
 .nav-link {
+  color: white !important;
   font-size: 18px;
   padding: 1rem;
-  transition: all 0.5s ease-out;
 }
 
-.nav-item.nav-link.active:hover,
-.navbar-brand:hover {
-  color: var(--cyan);
+.navbar-toggler {
+  background-color: var(--darkcyan);
 }
 
 .navbar-nav .btn {

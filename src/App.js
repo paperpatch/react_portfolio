@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 // import js libraries
 import './assets/library/jquery/jquery.min.js';
 import './assets/library/bootstrap/css/bootstrap.min.css';
@@ -9,7 +8,7 @@ import './assets/library/bootstrap/css/bootstrap.min.css';
 import './App.css';
 
 // import components
-import Navbar from './components/Nav';
+import Navigation from './components/Nav';
 import Intro from './components/Intro';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -21,7 +20,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div>
-      <Navbar />
+      <Navigation />
       <main>
         <>
           <Intro />

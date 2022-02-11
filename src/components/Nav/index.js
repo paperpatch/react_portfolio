@@ -1,25 +1,26 @@
 import React from "react";
 import Resume from "../Resume";
+import { Navbar, Nav, Container } from 'react-bootstrap'
 
-function Navbar() {
+function Navigation() {
 
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark sticky-top" id="navbar">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="./index.html">Patrick</a>
-
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav ms-auto">
-            <a className="nav-item nav-link active" href="#about">About</a>
-            <a className="nav-item nav-link active" href="#experience">Experience</a>
-            <a className="nav-item nav-link active" href="#feature">Projects</a>
-            <a className="nav-item nav-link active" href="#contact">Contact</a>
+    <Navbar className="navbar sticky-top" id="navbar" bg="" expand="md">
+      <Container>
+        <Navbar.Brand className ="brand" href="./index.html">Patrick</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link className="nav-link" href="#about">About</Nav.Link>
+            <Nav.Link className="nav-link" href="#experience">Experience</Nav.Link>
+            <Nav.Link className="nav-link" href="#feature">Projects</Nav.Link>
+            <Nav.Link className="nav-link" href="#contact">Contact</Nav.Link>
             <Resume />
-          </div>
-        </div>
-      </div>
-    </nav>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default Navigation;

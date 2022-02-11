@@ -56,7 +56,7 @@ function Featured() {
                     <div className="card-body">
                       <h3 className="card-title"><a href={featured.deploy} target="_blank" rel="noreferrer">{featured.name}</a></h3>
                       <p className="card-text">{featured.description}</p>
-                      <p><small className="text-sub">{featured.skills}</small></p>
+                      <p><small className="text-skill">{featured.skills}</small></p>
                       <a href={featured.github} target="_blank" rel="noreferrer">
                         <Github className="bi bi-github fa-lg"></Github>
                       </a>
