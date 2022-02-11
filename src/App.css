@@ -352,6 +352,7 @@ section {
 
 .other-projects-btn {
   width: 200px;
+  margin: 0 auto;
   margin-top: 50px;
   padding: 12px;
   font-size: 18px;

@@ -152,12 +152,13 @@ function Other() {
               </div>
               </React.Fragment>
             )
-          })}
-        
+          })}  
+        </div>
+      </div>
+      <div className="d-flex justify-content-center">
         <Button className="other-projects-btn" onClick={() => setShowMore(!showMore)}>
           {showMore ? "Show Less" : "Show More"}
         </Button>
-        </div>
       </div>
     </section>
   )
