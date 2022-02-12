@@ -9,16 +9,6 @@ function Featured() {
   const featured = {
     projects: [
       {
-        id: "open_fridge",
-        name: "Open Fridge",
-        github: "https://github.com/paperpatch/open_fridge",
-        deploy: "https://paperpatch.github.io/open_fridge/",
-        image: img_openfridge,
-        alt: "Open Fridge Project",
-        description: "Recipe dashboard that provides cooking instructions and nutritional value for any recipes you need. Uses Tasty API and Ninjas Nutritional API for responsive and dynamic user inputs.",
-        skills: "Foundation CSS JS jQuery API"
-      },
-      {
         id: "trackend",
         name: "Trackend",
         github: "https://github.com/paperpatch/trackend",
@@ -27,6 +17,16 @@ function Featured() {
         alt: "Trackend Project",
         description: "Issue Tracker Ticketing System with a CMS (Content Management System) style. Uses authentication and MVC paradigm, using Handlebars.js as template, Sequelize as ORM (Object-Relational Mapping) and Express-Session for authentication.",
         skills: "Bootstrap-Table Handlebars Sequelize MySQL Express API Heroku"
+      },
+      {
+        id: "open_fridge",
+        name: "Open Fridge",
+        github: "https://github.com/paperpatch/open_fridge",
+        deploy: "https://paperpatch.github.io/open_fridge/",
+        image: img_openfridge,
+        alt: "Open Fridge Project",
+        description: "Recipe dashboard that provides cooking instructions and nutritional value for any recipes you need. Uses Tasty API and Ninjas Nutritional API for responsive and dynamic user inputs.",
+        skills: "Foundation CSS JS jQuery API"
       },
       {
         id: "runbuddy",

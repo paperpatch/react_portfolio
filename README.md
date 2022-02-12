@@ -15,10 +15,6 @@ Uses the following tools in this repository:
 
 - [React](https://reactjs.org/)
   - Open-source, declarative, component-based JavaScript library for building user interfaces. It’s maintained by Facebook, and it can be used to develop of single-page applications (SPA).
-- [React Testing Library (@testing-library/react)](https://www.npmjs.com/package/@testing-library/react)
-  - Offers simple and complete React DOM testing utilities that encourage good testing practices.
-- [jest-dom (@testing-library/jest-dom)](https://www.npmjs.com/package/@testing-library/jest-dom)
-  - Testing library that provides a set of custom Jest matchers that you can use to extend the Jest testing framework, making your tests more declarative and easier to read and maintain.
 
 ## Deployment
 :computer:

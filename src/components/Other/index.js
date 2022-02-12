@@ -8,7 +8,7 @@ function Other() {
     other: [
       {
         id: "budget_tracker",
-        name: "Budget Taker",
+        name: "Budget Tracker",
         github: "https://github.com/paperpatch/budget_tracker",
         deploy: "https://budget-tracker-software.herokuapp.com/",
         description: "Application to provide users a fast and easy way to track money transactions. This app allows for offline access and functionality. Features Mongoose, IndexedDB, Service Workers, and Web Manifest.",
