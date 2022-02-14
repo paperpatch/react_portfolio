@@ -2,6 +2,8 @@
 
 Patrick Chen's [personal portfolio](https://patrickchen.dev/). Uses React state, props, hooks and reusable UI components.
 
+![Screenshot](/public/portfolio_screenshot.png)
+
 ## Table of Contents
 
 * [Setup](#setup)
@@ -21,7 +23,7 @@ Uses the following tools in this repository:
 
 See my [portfolio!](https://patrickchen.dev/)
 
-Check the rest of my GitHub profile for more of my repositories!
+Check the rest of my [GitHub profile](https://github.com/paperpatch) for more of my repositories!
 
 
 ## Contributing
