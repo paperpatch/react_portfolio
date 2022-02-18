@@ -2,7 +2,7 @@ import React from 'react';
 import { Github } from 'react-bootstrap-icons'
 import img_openfridge from '../../assets/projects/open_fridge_screenshot.webp'
 import img_trackend from '../../assets/projects/trackend-screenshot.webp'
-import img_runbuddy from '../../assets/projects/run-buddy-screenshot.webp'
+import img_booksearch from '../../assets/projects/booksearch-screenshot.png'
 
 function Featured() {
 
@@ -29,14 +29,14 @@ function Featured() {
         skills: "Foundation CSS JS jQuery API"
       },
       {
-        id: "runbuddy",
-        name: "Runbuddy",
-        github: "https://github.com/paperpatch",
-        deploy: "https://github.com/paperpatch",
-        image: img_runbuddy,
-        alt: "Tutorial",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas possimus numquam dolores dignissimos, libero labore facilis minima hic soluta aliquid error excepturi harum esse ab, culpa in quibusdam molestiae beatae?",
-        skills: "Boostrap JS Jquery"
+        id: "book_search_engine",
+        name: "Book Search Engine",
+        github: "https://github.com/paperpatch/book_search_engine",
+        deploy: "https://booksearch-engine-app.herokuapp.com/",
+        image: img_booksearch,
+        alt: "Book Search Engine Project",
+        description: "Constructed a MERN application to search up books. Users are able to sign up, login in, and save books to their profile. Uses React, MongoDB and Apollo Server to power the searches.",
+        skills: "JavaScript React MongoDB GraphQL Apollo Heroku"
       },
     ]
   }
