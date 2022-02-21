@@ -11,18 +11,44 @@ function ContactForm() {
 
   const form = useRef();
 
-  function sendEmail(e) {
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_f50rrtm', 'template_kuvehin', form.current, 'user_9aDjMu6kWGitfhmc8vUIi')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
+    if (e.target.name.value === '') {
+      window.alert('Please enter your name.')
+    } else {
+      if (e.target.email.value === '') {
+        window.alert('Please enter a valid email address.')
+      } else {
+        if (e.target.message.value === '') {
+          window.alert('Please enter a message.')
+        } else {
+          emailjs.sendForm('service_f50rrtm', 'template_kuvehin', form.current, 'user_9aDjMu6kWGitfhmc8vUIi')
+            .then((result) => {
+              console.log(result.text);
+            }, (error) => {
+              console.log(error.text);
+            });
+
+          // reset form values
+          setFormState({
+            name: '',
+            email: '',
+            message: '',
+          });
+
+          // reset values
+          e.target.name.value = '';
+          e.target.email.value = '';
+          e.target.message.value = '';
+
+          window.alert('Email Sent! Thank you.')
+        }
+      }
+    }
   };
 
-  function handleChange(e) {
+  const handleChange = (e) => {
 
     if (e.target.name === 'email') {
       const isValid = validateEmail(e.target.value);
@@ -53,13 +79,13 @@ function ContactForm() {
       
         <form className="form" ref={form} onSubmit={sendEmail}>
           <div>
-            <input className="form-input" placeholder="Your Name" type="text" defaultValue={name} onBlur={handleChange} name="user_name"/>
+            <input className="form-input" placeholder="Your Name" type="text" defaultValue={name} onBlur={handleChange} name="name"/>
           </div>
           <div>
-            <input className="form-input" placeholder="Your Email" type="email" defaultValue={email} name="user_email" onBlur={handleChange} />
+            <input className="form-input" placeholder="Your Email" type="email" defaultValue={email} name="email" onBlur={handleChange} />
           </div>
           <div>
-            <textarea className="form-input" placeholder="Your Message" name="message" defaultValue={message} rows="5" onBlur={handleChange} />
+            <textarea className="form-input" placeholder="Your Message" name="message" defaultValue={message} rows="6" onBlur={handleChange} />
           </div>
           {errorMessage && (
             <div>
