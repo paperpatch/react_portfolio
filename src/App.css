@@ -414,7 +414,7 @@ section {
 
 footer {
   background: var(--darkblue);
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -439,7 +439,7 @@ footer h4:hover {
 
 .social-container {
   width: 100%;
-  margin: 2rem;
+  margin: 1rem;
   text-align: center;
 }
 
@@ -517,10 +517,14 @@ footer h4:hover {
     width: 80%;
   }
 
+  .profile-pic {
+    opacity: 80%;
+  }
+
   .feature img {
     width: 100%;
     height: auto;
-    opacity: 20%;
+    opacity: 85%;
   }
 
   .side-email {
@@ -555,7 +559,6 @@ footer h4:hover {
     padding-left: 5%;
   }
 
-  .intro h1,
   p {
     font-size: 15px;
   }
@@ -584,26 +587,45 @@ footer h4:hover {
   .about,
   .jobs,
   .feature {
-    width: 90%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .about-description {
+    padding-right: 0px;
     margin: 0 auto;
   }
 
   .form-input, .form-button {
     width: 400px;
   }
+
+  footer, .social-container {
+    padding: 1rem;
+    margin: 0;
+  }
 }
 
 /* Specially for dropdown menu collapse transition */
 @media screen and (max-width: 576px) {
-  .dropdown-hide {
-    display: inline-block;
+  .intro-name {
+    font-weight: 600;
+    font-size: 60px;
   }
 
   .form-input, .form-button {
-    width: 370px;
+    width: 350px;
   }
-}
 
-@media (min-width: 576px) {
+  .about,
+  .jobs,
+  .feature {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
 
+  section {
+    padding: 1rem;
+  }
 }
