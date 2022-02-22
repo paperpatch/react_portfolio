@@ -541,13 +541,6 @@ footer h4:hover {
   }
 }
 
-/* Specially made this for side links */
-@media screen and (max-width: 991px) {
-  .side-email {
-    left: 72%;
-  }
-}
-
 /* Media Query for Low Resolution Tablets and Ipads and Smaller */
 @media screen and (max-width: 767px) {
   main {
@@ -595,8 +588,8 @@ footer h4:hover {
     margin: 0 auto;
   }
 
-  .side-email {
-    display: none;
+  .form-input, .form-button {
+    width: 400px;
   }
 }
 
@@ -605,12 +598,12 @@ footer h4:hover {
   .dropdown-hide {
     display: inline-block;
   }
+
+  .form-input, .form-button {
+    width: 370px;
+  }
 }
 
 @media (min-width: 576px) {
-  .modal-dialog {
-      max-width: 90vw;
-      margin: 1.75rem auto;
-      padding: 2rem;
-  }
+
 }
