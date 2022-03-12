@@ -71,7 +71,7 @@ body {
 }
 
 .modal-dialog {
-  width: 100%;
+  max-width: 100%;
 }
 
 .modal-header {
