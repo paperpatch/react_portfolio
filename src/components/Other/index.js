@@ -7,6 +7,14 @@ function Other() {
   const projects = {
     other: [
       {
+        id: "book_search_engine",
+        name: "Book Search Engine",
+        github: "https://github.com/paperpatch/book_search_engine",
+        deploy: "https://booksearch-engine-app.herokuapp.com/",
+        description: "Constructed a MERN application to search up books. Users are able to sign up, login in, and save books to their profile. Uses React, MongoDB and Apollo Server to power the searches.",
+        skills: "JavaScript React MongoDB GraphQL Apollo Heroku"
+      },
+      {
         id: "budget_tracker",
         name: "Budget Tracker",
         github: "https://github.com/paperpatch/budget_tracker",
@@ -46,6 +54,11 @@ function Other() {
         description: "Created a Command Line Interface App to manage a company's employee database. Uses Content Management Systems (CMS) to view and interact with databases.",
         skills: "JS Node MySQL"
       },
+    ]
+  }
+
+  const additional = {
+    other: [
       {
         id: "note_taker",
         name: "Note Taker",
@@ -54,11 +67,6 @@ function Other() {
         description: "Created an application to write and save notes. Uses Express.js back end to save and retrieve note data from JSON file.",
         skills: "JavaScript Node Express Heroku"
       },
-    ]
-  }
-
-  const additional = {
-    other: [
       {
         id: "team_profile_generator",
         name: "Team Profile Generator",

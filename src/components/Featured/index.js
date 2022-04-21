@@ -2,12 +2,22 @@ import React from 'react';
 import { Github } from 'react-bootstrap-icons'
 import img_openfridge from '../../assets/projects/open_fridge_screenshot.webp'
 import img_trackend from '../../assets/projects/trackend-screenshot.webp'
-import img_booksearch from '../../assets/projects/booksearch-screenshot.png'
+import img_sorting from '../../assets/projects/sorting-visualizer-screenshot.png'
 
 function Featured() {
 
   const featured = {
     projects: [
+      {
+        id: "sorting_visualizer",
+        name: "Sorting Visualizer",
+        github: "https://github.com/paperpatch/sorting_visualizer",
+        deploy: "https://paperpatch.github.io/sorting_visualizer/",
+        image: img_sorting,
+        alt: "Sorting Visualizer Project",
+        description: "Sorting Visualizer of popular algorithms featuring automatic or manually input of arrays and pleasing display of execution. Displays the total amount of swaps, comparisons, and time taken per sorting algorithm. Users are able to alter the speed of execution.",
+        skills: "JavaScript React zustand @emotion"
+      },
       {
         id: "trackend",
         name: "Trackend",
@@ -27,16 +37,6 @@ function Featured() {
         alt: "Open Fridge Project",
         description: "Recipe dashboard that provides cooking instructions and nutritional value for any recipes you need. Uses Tasty API and Ninjas Nutritional API for responsive and dynamic user inputs.",
         skills: "Foundation CSS JS jQuery API"
-      },
-      {
-        id: "book_search_engine",
-        name: "Book Search Engine",
-        github: "https://github.com/paperpatch/book_search_engine",
-        deploy: "https://booksearch-engine-app.herokuapp.com/",
-        image: img_booksearch,
-        alt: "Book Search Engine Project",
-        description: "Constructed a MERN application to search up books. Users are able to sign up, login in, and save books to their profile. Uses React, MongoDB and Apollo Server to power the searches.",
-        skills: "JavaScript React MongoDB GraphQL Apollo Heroku"
       },
     ]
   }
