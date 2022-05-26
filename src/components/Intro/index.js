@@ -19,7 +19,7 @@ function Intro() {
           loop
         />
       </span>
-      <p className="text-sub">Currently at <a href="https://bootcamp.uconn.edu/" target="_blank"
+      <p className="text-sub">Recently graduated from <a href="https://bootcamp.uconn.edu/" target="_blank"
           rel="noreferrer">UConn Bootcamp</a>.
       </p>
       <div className="mt-auto arrow">
