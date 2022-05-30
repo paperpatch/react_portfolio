@@ -7,6 +7,14 @@ function Other() {
   const projects = {
     other: [
       {
+        id: "key_input",
+        name: "Key Input",
+        github: "https://github.com/paperpatch/key_input",
+        deploy: "https://paperpatch.github.io/key_input/",
+        description: "Mini-game inspired by Lost Ark. A simple key input game where typing the correct sequence succeeds while inputting any other key will result in a failure.",
+        skills: "JavaScript React Mui"
+      },
+      {
         id: "book_search_engine",
         name: "Book Search Engine",
         github: "https://github.com/paperpatch/book_search_engine",
@@ -46,6 +54,11 @@ function Other() {
         description: "Created a back end for a general company's e-commerce site suing Express.js API and Sequelize configurations to interact with a MySQL database. Uses environmental variables and password zero-dependency module.",
         skills: "JS Express MySQL Insomnia"
       },
+    ]
+  }
+
+  const additional = {
+    other: [
       {
         id: "employee_tracker",
         name: "Employee Tracker",
@@ -54,11 +67,6 @@ function Other() {
         description: "Created a Command Line Interface App to manage a company's employee database. Uses Content Management Systems (CMS) to view and interact with databases.",
         skills: "JS Node MySQL"
       },
-    ]
-  }
-
-  const additional = {
-    other: [
       {
         id: "note_taker",
         name: "Note Taker",
