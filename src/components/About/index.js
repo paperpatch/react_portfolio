@@ -1,19 +1,26 @@
 import React from 'react'
 import profileImage from "../../assets/profile/profile-pic-2.webp";
+
 import icon_html from '../../assets/icons/frontend/icon-html.svg'
 import icon_css from '../../assets/icons/frontend/icon-css.svg'
 import icon_javascript from '../../assets/icons/frontend/icon-javascript.svg'
 import icon_bootstrap from '../../assets/icons/frontend/icon-bootstrap.svg'
 import icon_handlebars from '../../assets/icons/frontend/icon-handlebars.svg'
 import icon_react from '../../assets/icons/frontend/icon-react.svg'
+
+import icon_java from '../../assets/icons/backend/icon-java.svg'
 import icon_nodejs from '../../assets/icons/backend/icon-nodejs.svg'
 import icon_jest from '../../assets/icons/backend/icon-jest.svg'
 import icon_mysql from '../../assets/icons/backend/icon-mysql.svg'
 import icon_mongo from '../../assets/icons/backend/icon-mongo.svg'
 import icon_heroku from '../../assets/icons/backend/icon-heroku.svg'
+import icon_docker from '../../assets/icons/backend/icon-docker.svg'
+
 import icon_bash from '../../assets/icons/tools/icon-bash.svg'
 import icon_github from '../../assets/icons/tools/icon-github-bootstrap.svg'
 import icon_npm from '../../assets/icons/tools/icon-npm.svg'
+import icon_spring from '../../assets/icons/tools/icon-spring.svg'
+import icon_jira from '../../assets/icons/tools/icon-jira.svg'
 
 function About() {
 
@@ -52,6 +59,11 @@ function About() {
     ],
     backend: [
       {
+        id: "java",
+        name: "Java",
+        image: icon_java
+      },
+      {
         id: "nodejs",
         name: "NodeJS",
         image: icon_nodejs
@@ -76,6 +88,11 @@ function About() {
         name: "Heroku",
         image: icon_heroku
       },
+      {
+        id: "docker",
+        name: "Docker",
+        image: icon_docker
+      },
     ],
     tools: [
       {
@@ -92,6 +109,16 @@ function About() {
         id: "npm",
         name: "npm",
         image: icon_npm
+      },
+      {
+        id: "spring",
+        name: "Spring",
+        image: icon_spring
+      },
+      {
+        id: "jira",
+        name: "Jira",
+        image: icon_jira
       },
     ]
   }
