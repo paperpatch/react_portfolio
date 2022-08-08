@@ -8,6 +8,16 @@ function Experience() {
   const work = {
     company: [
       {
+        id: "bootcamp2",
+        name: "Cognizant SMU Bootcamp",
+        role: "Developer",
+        dates: "June 2022 - August 2022",
+        link: "https://www.cognizant.com/us/en/about-cognizant/talent-worldwide/no-cost-full-stack-engineer-training",
+        description1: "Completed an accelerated Java course to learn all the backend utilities necessary for object oriented programming",
+        description2: "Implemented microservices, docker, relational databases and spring boot applications.",
+        description3: "Strengthen and reinforce REST API design skills and deployment.",
+      },
+      {
         id: "bootcamp",
         name: "UConn Bootcamp",
         role: "Developer",
