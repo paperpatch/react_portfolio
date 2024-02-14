@@ -1,205 +1,265 @@
-import React from 'react'
+import React from "react";
 import profileImage from "../../assets/profile/profile-pic-2.webp";
 
-import icon_html from '../../assets/icons/frontend/icon-html.svg'
-import icon_css from '../../assets/icons/frontend/icon-css.svg'
-import icon_javascript from '../../assets/icons/frontend/icon-javascript.svg'
-import icon_bootstrap from '../../assets/icons/frontend/icon-bootstrap.svg'
-import icon_handlebars from '../../assets/icons/frontend/icon-handlebars.svg'
-import icon_react from '../../assets/icons/frontend/icon-react.svg'
+// Languages
+import icon_html from "../../assets/icons/languages/icon-html.svg";
+import icon_css from "../../assets/icons/languages/icon-css.svg";
+import icon_typescript from "../../assets/icons/languages/icon-typescript.svg";
+import icon_javascript from "../../assets/icons/languages/icon-javascript.svg";
+import icon_java from "../../assets/icons/languages/icon-java.svg";
 
-import icon_java from '../../assets/icons/backend/icon-java.svg'
-import icon_nodejs from '../../assets/icons/backend/icon-nodejs.svg'
-import icon_jest from '../../assets/icons/backend/icon-jest.svg'
-import icon_mysql from '../../assets/icons/backend/icon-mysql.svg'
-import icon_mongo from '../../assets/icons/backend/icon-mongo.svg'
-import icon_heroku from '../../assets/icons/backend/icon-heroku.svg'
-import icon_docker from '../../assets/icons/backend/icon-docker.svg'
+// Frameworks & Library
+import icon_bootstrap from "../../assets/icons/frameworks/icon-bootstrap.svg";
+import icon_handlebars from "../../assets/icons/frameworks/icon-handlebars.svg";
+import icon_nodejs from "../../assets/icons/frameworks/icon-nodejs.svg";
+import icon_jest from "../../assets/icons/frameworks/icon-jest.svg";
+import icon_react from "../../assets/icons/frameworks/icon-react.svg";
 
-import icon_bash from '../../assets/icons/tools/icon-bash.svg'
-import icon_github from '../../assets/icons/tools/icon-github-bootstrap.svg'
-import icon_npm from '../../assets/icons/tools/icon-npm.svg'
-import icon_spring from '../../assets/icons/tools/icon-spring.svg'
-import icon_jira from '../../assets/icons/tools/icon-jira.svg'
+// Databases & Cloud
+import icon_mysql from "../../assets/icons/databases/icon-mysql.svg";
+import icon_mongo from "../../assets/icons/databases/icon-mongo.svg";
+import icon_postgres from "../../assets/icons/databases/icon-postgres.svg";
+import icon_heroku from "../../assets/icons/databases/icon-heroku.svg";
+import icon_aws from "../../assets/icons/databases/icon-aws.svg";
+
+// Tools
+import icon_bash from "../../assets/icons/tools/icon-bash.svg";
+import icon_github from "../../assets/icons/tools/icon-github-bootstrap.svg";
+import icon_npm from "../../assets/icons/tools/icon-npm.svg";
+import icon_docker from "../../assets/icons/tools/icon-docker.svg";
+import icon_spring from "../../assets/icons/tools/icon-spring.svg";
+import icon_jira from "../../assets/icons/tools/icon-jira.svg";
 
 function About() {
-
   const skills = {
-    frontend: [
+    languages: [
       {
         id: "html",
         name: "HTML",
-        image: icon_html
+        image: icon_html,
       },
       {
         id: "css",
         name: "CSS",
-        image: icon_css
+        image: icon_css,
       },
       {
         id: "javascript",
         name: "JavaScript",
-        image: icon_javascript
+        image: icon_javascript,
       },
-      {
-        id: "bootstrap",
-        name: "Bootstrap",
-        image: icon_bootstrap
-      },
-      {
-        id: "handlebars",
-        name: "Handlebars",
-        image: icon_handlebars
-      },
-      {
-        id: "react",
-        name: "React",
-        image: icon_react
-      }
-    ],
-    backend: [
       {
         id: "java",
         name: "Java",
-        image: icon_java
+        image: icon_java,
       },
+      {
+        id: "typescript",
+        name: "Typescript",
+        image: icon_typescript,
+      },
+    ],
+    library: [
       {
         id: "nodejs",
         name: "NodeJS",
-        image: icon_nodejs
+        image: icon_nodejs,
       },
       {
         id: "jest",
         name: "Jest",
-        image: icon_jest
+        image: icon_jest,
       },
+      {
+        id: "bootstrap",
+        name: "Bootstrap",
+        image: icon_bootstrap,
+      },
+      {
+        id: "handlebars",
+        name: "Handlebars",
+        image: icon_handlebars,
+      },
+      {
+        id: "react",
+        name: "React",
+        image: icon_react,
+      },
+      {
+        id: "spring",
+        name: "Spring",
+        image: icon_spring,
+      },
+    ],
+    databases: [
       {
         id: "mysql",
         name: "MySQL",
-        image: icon_mysql
+        image: icon_mysql,
       },
       {
         id: "mongodb",
         name: "MongoDB",
-        image: icon_mongo
+        image: icon_mongo,
+      },
+      {
+        id: "postgres",
+        name: "PostgresSQL",
+        image: icon_postgres,
       },
       {
         id: "heroku",
         name: "Heroku",
-        image: icon_heroku
+        image: icon_heroku,
       },
       {
-        id: "docker",
-        name: "Docker",
-        image: icon_docker
+        id: "aws",
+        name: "AWS",
+        image: icon_aws,
       },
     ],
     tools: [
       {
         id: "gitbash",
         name: "Git Bash",
-        image: icon_bash
+        image: icon_bash,
       },
       {
         id: "github",
         name: "GitHub",
-        image: icon_github
+        image: icon_github,
       },
       {
         id: "npm",
         name: "npm",
-        image: icon_npm
-      },
-      {
-        id: "spring",
-        name: "Spring",
-        image: icon_spring
+        image: icon_npm,
       },
       {
         id: "jira",
         name: "Jira",
-        image: icon_jira
+        image: icon_jira,
       },
-    ]
-  }
+      {
+        id: "docker",
+        name: "Docker",
+        image: icon_docker,
+      },
+    ],
+  };
 
   return (
     <section id="about" className="about">
-      <h2 className="title">
-        About Me
-      </h2>
+      <h2 className="title">About Me</h2>
       <div className="inner container">
         <div className="row">
           <div className="about-description col-lg-6 col-md-12">
             <p>
-              Hello! My name is Pat and I enjoy creating things on the internet. My interest in coding started when a
-              friend introduced me and thought I would be a good fit. Previously a civil engineer, I decided to take a
-              career change for coding to pursue making things that would excite me.
+              Hello! My name is Pat and I enjoy creating things on the internet.
+              My interest in coding started when a friend introduced me and
+              thought I would be a good fit. Previously a civil engineer, I
+              decided to take a career change for coding to pursue making things
+              that would excite me.
             </p>
             <p>
-              I am looking forward to learning about machine algorithm scripting and artificial intelligence. I want to experience and explore where I stand in this
-              rapid technological developing world.</p>
+              I am looking forward to learning about machine algorithm scripting
+              and artificial intelligence. I want to experience and explore
+              where I stand in this rapid technological developing world.
+            </p>
             <p>
-              Apart from coding, I enjoy sports like volleyball, cycling and ultimate. As for hobbies, I occassionally
-              play chess and board games on my free time.
+              Apart from coding, I enjoy sports like volleyball, cycling and
+              ultimate. As for hobbies, I occassionally play chess and board
+              games on my free time.
             </p>
           </div>
-          <img className="col-lg-6 col-md-12 m-auto profile-pic" src={profileImage} alt="Pat Chen" />
+          <img
+            className="col-lg-6 col-md-12 m-auto profile-pic"
+            src={profileImage}
+            alt="Pat Chen"
+          />
         </div>
       </div>
       <h2 className="title">Skills</h2>
       <div className="container">
         <div className="row">
-
-          <h3 className="row mt-2">Front End:</h3>
-          <hr/>
+          <h3 className="row mt-2">Languages:</h3>
+          <hr />
           <div className="row ">
-          {skills.frontend.map( frontend => {
-            return (
-              <React.Fragment key={frontend.id}>
-                  <div className="col">
-                    <img className="code-icon" src={frontend.image} alt={frontend.name} />
-                    <label className="skill-name">{frontend.name}</label>
-                  </div>
-              </React.Fragment>
-              )
-            })}
-          </div>
-            
-          <h3 className="row mt-5">Back End:</h3>
-          <hr/>
-          <div className="row row-cols-auto">
-            {skills.backend.map( backend => {
+            {skills.languages.map((language) => {
               return (
-                <React.Fragment key={backend.id}>
+                <React.Fragment key={language.id}>
                   <div className="col">
-                    <img className="code-icon" src={backend.image} alt={backend.name} />
-                    <label className="skill-name">{backend.name}</label>
+                    <img
+                      className="code-icon"
+                      src={language.image}
+                      alt={language.name}
+                    />
+                    <label className="skill-name">{language.name}</label>
                   </div>
                 </React.Fragment>
-              )
+              );
+            })}
+          </div>
+
+          <h3 className="row mt-5">Frameworks & Library:</h3>
+          <hr />
+          <div className="row row-cols-auto">
+            {skills.library.map((library) => {
+              return (
+                <React.Fragment key={library.id}>
+                  <div className="col">
+                    <img
+                      className="code-icon"
+                      src={library.image}
+                      alt={library.name}
+                    />
+                    <label className="skill-name">{library.name}</label>
+                  </div>
+                </React.Fragment>
+              );
+            })}
+          </div>
+
+          <h3 className="row mt-5">Databases & Cloud:</h3>
+          <hr />
+          <div className="row row-cols-auto">
+            {skills.databases.map((database) => {
+              return (
+                <React.Fragment key={database.id}>
+                  <div className="col">
+                    <img
+                      className="code-icon"
+                      src={database.image}
+                      alt={database.name}
+                    />
+                    <label className="skill-name">{database.name}</label>
+                  </div>
+                </React.Fragment>
+              );
             })}
           </div>
 
           <h3 className="row mt-5">Tools:</h3>
-          <hr/>
+          <hr />
           <div className="row row-cols-auto">
-              {skills.tools.map( tools => {
-                  return (
-                    <React.Fragment key={tools.id}>
-                      <div className="col">
-                        <img className="code-icon" src={tools.image} alt={tools.name} />
-                        <label className="skill-name">{tools.name}</label>
-                      </div>
-                    </React.Fragment>
-                  )
-                })}
+            {skills.tools.map((tool) => {
+              return (
+                <React.Fragment key={tool.id}>
+                  <div className="col">
+                    <img
+                      className="code-icon"
+                      src={tool.image}
+                      alt={tool.name}
+                    />
+                    <label className="skill-name">{tool.name}</label>
+                  </div>
+                </React.Fragment>
+              );
+            })}
           </div>
-
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;
