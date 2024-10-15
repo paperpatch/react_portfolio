@@ -94,13 +94,14 @@ function ContactForm() {
           to get back to you!
         </p>
         <p>
-          You can contact me using the form below or email me at{" "}
+          You can contact me by email me at{" "}
           <a href="mailto: patchen21@gmail.com" target="_blank">
             patchen21@gmail.com
           </a>
         </p>
 
-        <form className="form" ref={form} onSubmit={sendEmail}>
+        {/* Contact form no longer works. Replace or Remove. */}
+        {/* <form className="form" ref={form} onSubmit={sendEmail}>
           <div>
             <input
               className="form-input"
@@ -141,7 +142,7 @@ function ContactForm() {
               Submit
             </button>
           </div>
-        </form>
+        </form> */}
       </div>
     </section>
   );

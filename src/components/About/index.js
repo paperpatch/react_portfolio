@@ -14,6 +14,7 @@ import icon_handlebars from "../../assets/icons/frameworks/icon-handlebars.svg";
 import icon_nodejs from "../../assets/icons/frameworks/icon-nodejs.svg";
 import icon_jest from "../../assets/icons/frameworks/icon-jest.svg";
 import icon_react from "../../assets/icons/frameworks/icon-react.svg";
+import icon_spring from "../../assets/icons/frameworks/icon-spring.svg";
 
 // Databases & Cloud
 import icon_mysql from "../../assets/icons/databases/icon-mysql.svg";
@@ -24,10 +25,9 @@ import icon_aws from "../../assets/icons/databases/icon-aws.svg";
 
 // Tools
 import icon_bash from "../../assets/icons/tools/icon-bash.svg";
-import icon_github from "../../assets/icons/tools/icon-github-bootstrap.svg";
+import icon_github from "../../assets/icons/tools/icon-github.svg";
 import icon_npm from "../../assets/icons/tools/icon-npm.svg";
 import icon_docker from "../../assets/icons/tools/icon-docker.svg";
-import icon_spring from "../../assets/icons/tools/icon-spring.svg";
 import icon_jira from "../../assets/icons/tools/icon-jira.svg";
 
 function About() {
@@ -49,20 +49,20 @@ function About() {
         image: icon_javascript,
       },
       {
-        id: "java",
-        name: "Java",
-        image: icon_java,
-      },
-      {
         id: "typescript",
         name: "Typescript",
         image: icon_typescript,
       },
+      {
+        id: "java",
+        name: "Java",
+        image: icon_java,
+      }
     ],
     library: [
       {
         id: "nodejs",
-        name: "NodeJS",
+        name: "Node.JS",
         image: icon_nodejs,
       },
       {
@@ -89,7 +89,7 @@ function About() {
         id: "spring",
         name: "Spring",
         image: icon_spring,
-      },
+      }
     ],
     databases: [
       {
@@ -116,7 +116,7 @@ function About() {
         id: "aws",
         name: "AWS",
         image: icon_aws,
-      },
+      }
     ],
     tools: [
       {
@@ -143,7 +143,7 @@ function About() {
         id: "docker",
         name: "Docker",
         image: icon_docker,
-      },
+      }
     ],
   };
 
@@ -154,21 +154,17 @@ function About() {
         <div className="row">
           <div className="about-description col-lg-6 col-md-12">
             <p>
-              Hello! My name is Pat and I enjoy creating things on the internet.
-              My interest in coding started when a friend introduced me and
-              thought I would be a good fit. Previously a civil engineer, I
-              decided to take a career change for coding to pursue making things
-              that would excite me.
+              Hi, I'm Pat! I've always had a passion for creating things on the internet,
+              and my journey into coding began when a friend suggested I'd be a great fit for it.
+              With a background as a civil engineer, I decided to switch careers to pursue something that excites
+              me — developing software and building digital experiences.
             </p>
             <p>
-              I am looking forward to learning about machine algorithm scripting
-              and artificial intelligence. I want to experience and explore
-              where I stand in this rapid technological developing world.
+              I&apos;m particularly eager to dive deeper into machine learning, algorithm scripting, and artificial intelligence, as I explore where I can contribute in today&apos;s rapidly evolving tech landscape.
             </p>
             <p>
-              Apart from coding, I enjoy sports like volleyball, cycling and
-              ultimate. As for hobbies, I occassionally play chess and board
-              games on my free time.
+            Outside of coding, I enjoy playing volleyball and climbing,
+            and I also like to unwind with a good book in my free time.
             </p>
           </div>
           <img
@@ -183,7 +179,7 @@ function About() {
         <div className="row">
           <h3 className="row mt-2">Languages:</h3>
           <hr />
-          <div className="row ">
+          <div className="row">
             {skills.languages.map((language) => {
               return (
                 <React.Fragment key={language.id}>
@@ -202,7 +198,7 @@ function About() {
 
           <h3 className="row mt-5">Frameworks & Library:</h3>
           <hr />
-          <div className="row row-cols-auto">
+          <div className="row">
             {skills.library.map((library) => {
               return (
                 <React.Fragment key={library.id}>
@@ -221,7 +217,7 @@ function About() {
 
           <h3 className="row mt-5">Databases & Cloud:</h3>
           <hr />
-          <div className="row row-cols-auto">
+          <div className="row">
             {skills.databases.map((database) => {
               return (
                 <React.Fragment key={database.id}>
@@ -240,7 +236,7 @@ function About() {
 
           <h3 className="row mt-5">Tools:</h3>
           <hr />
-          <div className="row row-cols-auto">
+          <div className="row">
             {skills.tools.map((tool) => {
               return (
                 <React.Fragment key={tool.id}>
