@@ -57,7 +57,7 @@ function About() {
         id: "java",
         name: "Java",
         image: icon_java,
-      }
+      },
     ],
     library: [
       {
@@ -89,7 +89,7 @@ function About() {
         id: "spring",
         name: "Spring",
         image: icon_spring,
-      }
+      },
     ],
     databases: [
       {
@@ -116,7 +116,7 @@ function About() {
         id: "aws",
         name: "AWS",
         image: icon_aws,
-      }
+      },
     ],
     tools: [
       {
@@ -143,7 +143,7 @@ function About() {
         id: "docker",
         name: "Docker",
         image: icon_docker,
-      }
+      },
     ],
   };
 
@@ -154,17 +154,21 @@ function About() {
         <div className="row">
           <div className="about-description col-lg-6 col-md-12">
             <p>
-              Hi, I'm Pat! I've always had a passion for creating things on the internet,
-              and my journey into coding began when a friend suggested I'd be a great fit for it.
-              With a background as a civil engineer, I decided to switch careers to pursue something that excites
-              me — developing software and building digital experiences.
+              Hi, I'm Pat! I've always had a passion for creating things on the
+              internet, and my journey into coding began when a friend suggested
+              I'd be a great fit for it. With a background as a civil engineer,
+              I decided to switch careers to pursue something that excites me —
+              developing software and building digital experiences.
             </p>
             <p>
-              I&apos;m particularly eager to dive deeper into machine learning, algorithm scripting, and artificial intelligence, as I explore where I can contribute in today&apos;s rapidly evolving tech landscape.
+              I&apos;m particularly eager to dive deeper into machine learning,
+              algorithm scripting, and artificial intelligence, as I explore
+              where I can contribute in today&apos;s rapidly evolving tech
+              landscape.
             </p>
             <p>
-            Outside of coding, I enjoy playing volleyball and climbing,
-            and I also like to unwind with a good book in my free time.
+              Outside of coding, I enjoy playing volleyball and climbing, and I
+              also like to unwind with a good book in my free time.
             </p>
           </div>
           <img

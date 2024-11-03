@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <footer>
-      <div className="social-container">
+      <nav className="social-container">
         <ul className="social-icons">
           <li>
             <a
@@ -33,9 +33,9 @@ function Footer() {
             </a>
           </li>
         </ul>
-        <h4>© 2022 Patrick Chen</h4>
+        <span>© 2022 Patrick Chen</span>
         <br />
-      </div>
+      </nav>
     </footer>
   );
 }
