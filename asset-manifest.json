@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.0c8a7b7c.css",
-    "main.js": "/static/js/main.ff2eedda.js",
+    "main.js": "/static/js/main.58d7825a.js",
     "static/js/496.b3bfde3b.chunk.js": "/static/js/496.b3bfde3b.chunk.js",
-    "static/media/open_fridge_screenshot.webp": "/static/media/open_fridge_screenshot.5a042808333ec63f6619.webp",
     "static/media/sorting-visualizer-screenshot.png": "/static/media/sorting-visualizer-screenshot.09068177274524e66eff.png",
+    "static/media/genki-screenshot.jpg": "/static/media/genki-screenshot.6084aa5d86cbfd131b6e.jpg",
     "static/media/profile-pic-2.webp": "/static/media/profile-pic-2.ce205ba6c9ac174f5e2a.webp",
     "static/media/PATRICK_CHEN_RESUME.pdf": "/static/media/PATRICK_CHEN_RESUME.f34b86f0085bdecad79d.pdf",
     "static/media/key-input-wide.webp": "/static/media/key-input-wide.44d97db61e829f4f61cc.webp",
@@ -31,11 +31,11 @@
     "static/media/icon-javascript.svg": "/static/media/icon-javascript.b879f838faf1cb951d1c2230fd933a39.svg",
     "static/media/icon-npm.svg": "/static/media/icon-npm.87689eab730642c86d2b01f3ef4a19e3.svg",
     "main.0c8a7b7c.css.map": "/static/css/main.0c8a7b7c.css.map",
-    "main.ff2eedda.js.map": "/static/js/main.ff2eedda.js.map",
+    "main.58d7825a.js.map": "/static/js/main.58d7825a.js.map",
     "496.b3bfde3b.chunk.js.map": "/static/js/496.b3bfde3b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c8a7b7c.css",
-    "static/js/main.ff2eedda.js"
+    "static/js/main.58d7825a.js"
   ]
 }
