@@ -1,6 +1,6 @@
 import React from "react";
 import { Github } from "react-bootstrap-icons";
-import img_openfridge from "../../assets/projects/open_fridge_screenshot.webp";
+import img_genki from "../../assets/projects/genki-screenshot.jpg";
 import img_input from "../../assets/projects/key-input-wide.webp";
 import img_sorting from "../../assets/projects/sorting-visualizer-screenshot.png";
 
@@ -19,6 +19,17 @@ function Featured() {
         skills: "JavaScript React zustand @emotion",
       },
       {
+        id: "genki_notes",
+        name: "Genki Notes",
+        github: "https://github.com/paperpatch/genki_notes",
+        deploy: "https://paperpatch.github.io/genki_notes/",
+        image: img_genki,
+        alt: "Genki Notes Project",
+        description:
+          "Personal study guide derived from Genki I and Genki II Japanese textbooks. Includes a search function and dynamic setting changes.",
+        skills: "JavaScript React",
+      },
+      {
         id: "key_input",
         name: "Key Input",
         github: "https://github.com/paperpatch/key_input",
@@ -27,17 +38,6 @@ function Featured() {
         description:
           "Mini-game inspired by Lost Ark. A simple key input game where typing the correct sequence succeeds while inputting any other key will result in a failure.",
         skills: "JavaScript React Mui",
-      },
-      {
-        id: "open_fridge",
-        name: "Open Fridge",
-        github: "https://github.com/paperpatch/open_fridge",
-        deploy: "https://paperpatch.github.io/open_fridge/",
-        image: img_openfridge,
-        alt: "Open Fridge Project",
-        description:
-          "Recipe dashboard that provides cooking instructions and nutritional value for any recipes you need. Uses Tasty API and Ninjas Nutritional API for responsive and dynamic user inputs.",
-        skills: "Foundation CSS JS jQuery API",
       },
     ],
   };
