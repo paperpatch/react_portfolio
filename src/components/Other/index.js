@@ -24,15 +24,6 @@ function Other() {
         skills: "JS Bootstrap jQuery",
       },
       {
-        id: "work_day_scheduler",
-        name: "Work Day Scheduler",
-        github: "https://github.com/paperpatch/schedule_workday",
-        deploy: "https://paperpatch.github.io/schedule_workday/",
-        description:
-          "A simple calendar application that allows a user to save events for each hour of the day.",
-        skills: "JS Bootstrap jQuery",
-      },
-      {
         id: "weather_dashboard",
         name: "Weather Dashboard",
         github: "https://github.com/paperpatch/weather_dashboard",
@@ -61,11 +52,6 @@ function Other() {
           "Issue Tracker Ticketing System with a CMS (Content Management System) style. Uses authentication and MVC paradigm, using Handlebars.js as template, Sequelize as ORM (Object-Relational Mapping) and Express-Session for authentication.",
         skills: "Bootstrap-Table Handlebars Sequelize MySQL Express API Heroku",
       },
-    ],
-  };
-
-  const additional = {
-    other: [
       {
         id: "book_search_engine",
         name: "Book Search Engine",
@@ -76,6 +62,11 @@ function Other() {
           "Constructed a MERN application to search up books. Users are able to sign up, login in, and save books to their profile. Uses React, MongoDB and Apollo Server to power the searches.",
         skills: "JavaScript React MongoDB GraphQL Apollo Heroku",
       },
+    ],
+  };
+
+  const additional = {
+    other: [
       {
         id: "budget_tracker",
         name: "Budget Tracker",
@@ -122,6 +113,15 @@ function Other() {
         description:
           "Startup social app where users have thoughts to share and other users can input reactions to users' thoughts. Built by using NoSQL MogoDB and Insomnia to test api routes.",
         skills: "JavaScript MongoDB Insomnia ",
+      },
+      {
+        id: "tech_blog",
+        name: "Tech Blog",
+        github: "https://github.com/paperpatch/tech_blog",
+        deploy: "https://github.com/paperpatch/tech_blog",
+        description:
+          "Built a CMS (Content Management System) style blog site. Uses Model-View-Controller paradigm and Sequelize.",
+        skills: "JS Node Express MySQL Handlebars Heroku",
       },
     ],
   };

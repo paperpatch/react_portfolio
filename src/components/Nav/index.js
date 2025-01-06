@@ -1,8 +1,16 @@
-import React from "react";
-import Resume from "../Resume";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { useState } from "react";
+import { Button, Modal, Navbar, Nav, Container } from "react-bootstrap";
+import { PDFObject } from "react-pdfobject";
+
+import resume from "../../assets/resume/PATRICK_CHEN_RESUME.pdf";
+
 
 function Navigation() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <Navbar className="navbar sticky-top" id="navbar" bg="" expand="md">
       <Container>
@@ -24,7 +32,26 @@ function Navigation() {
             <Nav.Link className="nav-link" href="#contact">
               Contact
             </Nav.Link>
-            <Resume />
+            {/* Resume */}
+            <>
+              <Button className="resume-btn" onClick={handleShow}>
+                Resume
+              </Button>
+
+              <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                  <Modal.Title>Resume</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <PDFObject url={resume} />
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleClose}>
+                    Close
+                  </Button>
+                </Modal.Footer>
+              </Modal>
+            </>
           </Nav>
         </Navbar.Collapse>
       </Container>
