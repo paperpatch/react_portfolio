@@ -1,61 +1,53 @@
 import { useState } from "react";
-import { Button, Modal, Navbar, Nav, Container } from "react-bootstrap";
 import { PDFObject } from "react-pdfobject";
 
 import resume from "../../assets/resume/PATRICK_CHEN_RESUME.pdf";
 
 
 function Navigation() {
-  const [show, setShow] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleMenuToggle = () => setMenuOpen(!menuOpen);
+  const handleModalClose = () => setModalOpen(false);
+  const handleModalShow = () => setModalOpen(true);
 
   return (
-    <Navbar className="navbar sticky-top" id="navbar" bg="" expand="md">
-      <Container>
-        <Navbar.Brand className="brand" href="./index.html">
-          Patrick
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link className="nav-link" href="#about">
-              About
-            </Nav.Link>
-            <Nav.Link className="nav-link" href="#experience">
-              Experience
-            </Nav.Link>
-            <Nav.Link className="nav-link" href="#feature">
-              Projects
-            </Nav.Link>
-            <Nav.Link className="nav-link" href="#contact">
-              Contact
-            </Nav.Link>
-            {/* Resume */}
-            <>
-              <Button className="resume-btn" onClick={handleShow}>
-                Resume
-              </Button>
-
-              <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                  <Modal.Title>Resume</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                  <PDFObject url={resume} />
-                </Modal.Body>
-                <Modal.Footer>
-                  <Button variant="secondary" onClick={handleClose}>
-                    Close
-                  </Button>
-                </Modal.Footer>
-              </Modal>
-            </>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className="navbar sticky-top" id="navbar">
+      <div className="container">
+        <a className="navbar-brand" href="#home">Patrick</a>
+        <button className="navbar-toggler" onClick={handleMenuToggle}>
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className={`navbar-collapse ${menuOpen ? 'show' : ''}`}>
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link" href="#about">About</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#experience">Experience</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#featured">Featured</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#contact">Contact</a>
+            </li>
+            <li className="nav-item">
+              <button className="nav-link resume-button" onClick={handleModalShow}>Resume</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      {modalOpen && (
+        <div className="pdf-modal">
+          <div className="pdf-modal-content">
+            <span className="pdf-modal-close" onClick={handleModalClose}>&times;</span>
+            <PDFObject url={resume} width="100%" height="500px" />
+          </div>
+        </div>
+      )}
+    </nav>
   );
 }
 
