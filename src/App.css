@@ -1,24 +1,28 @@
 :root {
-  --font-family-sans-serif: "Roborto", sans-serif;
   --cyan: #0dcaf0;
   --darkcyan: #0f83ad;
   --blue: #002b41;
   --darkblue: #001d2c;
-  --white: #f5faf9;
-  --grey: #c4c4c4da;
 
   --timing: 265ms;
-  --scale: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--darkblue);
-  font-family: var(--font-family-sans-serif);
-  color: var(--white);
+  background-color: #001d2c;
+  color: white;
+  font-family: Arial, sans-serif;
   line-height: 1.3;
-  margin: 0;
-  box-sizing: border-box;
   min-width: fit-content;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
@@ -96,12 +100,13 @@ body {
 }
 
 .intro-name {
+  color: white;
   font-weight: 600;
   font-size: 70px;
 }
 
 .intro-text-slider {
-  color: var(--grey);
+  color: #c4c4c4da;
   font-weight: 600;
   font-size: 40px;
 }
@@ -134,7 +139,7 @@ body {
 
 .card-title {
   font-size: 25px;
-  color: var(--white);
+  color: white;
   transition: all 0.3s ease-out;
   margin-top: 5px;
 }
@@ -173,29 +178,38 @@ body {
   color: var(--darkcyan);
 }
 
-/* #goBackTopBtn {
-  position: fixed;
-  left: 85%;
-  bottom: 2rem;
-  border: 2px solid black;
-  border-radius: 50%;
-  padding: 0.5rem;
-  background-color: var(--cyan);
-  display: none;
-} */
-
 /* INTRO */
 
 .intro {
+  display: flex;
   height: 100vh;
-  padding-top: 15%;
+  flex-direction: column;
+  justify-content: center;
   width: 50%;
   margin: 0 auto;
-  line-height: 2;
+  line-height: 1;
 }
 
 .arrow {
-  padding-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.arrow hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #c4c4c4da;
+  margin: 0 10px;
+}
+
+.arrow a {
+  text-decoration: none;
+}
+
+.arrow i {
+  font-size: 3em;
 }
 
 /* ABOUT */
@@ -203,7 +217,6 @@ body {
 section {
   margin: 0 auto;
   transition: all 1s ease;
-  padding-top: 5%;
 }
 
 .about {
@@ -304,7 +317,7 @@ section {
 }
 
 .feature a {
-  color: var(--white);
+  color: white;
 }
 
 .feature img {
@@ -330,7 +343,7 @@ section {
 }
 
 .project-card a {
-  color: var(--white);
+  color: white;
   text-decoration: none;
 }
 
@@ -421,7 +434,7 @@ footer {
 }
 
 footer h4 {
-  color: var(--grey);
+  color: #c4c4c4da;
   font-size: 18px;
   font-weight: lighter;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -469,7 +482,7 @@ footer h4:hover {
 }
 
 .social-icons a:before {
-  transform: scale(var(--scale));
+  transform: scale(1);
   content: " ";
   width: 60px;
   height: 60px;

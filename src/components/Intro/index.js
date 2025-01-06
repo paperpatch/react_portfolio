@@ -3,7 +3,7 @@ import Typed from "react-typed";
 
 function Intro() {
   return (
-    <div className="intro container d-flex flex-column">
+    <div className="intro">
       <h1 className="intro-title">Hi, my name is</h1>
       <h1 className="intro-name">Pat Chen.</h1>
       <span className="intro-text-slider">
@@ -16,14 +16,12 @@ function Intro() {
         />
       </span>
       <p className="text-sub">Experienced Software Engineer</p>
-      <div className="mt-auto arrow">
-        <div className="row text-center">
-          <hr className="col my-auto"></hr>
-          <a className="col-2 my-auto" href="#about">
-            <i className="fas fa-angle-down fa-3x"></i>
-          </a>
-          <hr className="col my-auto"></hr>
-        </div>
+      <div className="arrow">
+        <hr />
+        <a href="#about">
+          <i className="fas fa-angle-down"></i>
+        </a>
+        <hr />
       </div>
     </div>
   );

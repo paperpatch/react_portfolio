@@ -1,10 +1,4 @@
 import React from "react";
-
-// import js libraries
-import "./assets/library/jquery/jquery.min.js";
-import "./assets/library/bootstrap/css/bootstrap.min.css";
-
-// import css in order
 import "./App.css";
 
 // import components
@@ -28,7 +22,7 @@ function App() {
           <Other />
           <section id="contact">
             <div className="contacts">
-              <h1 data-testid="h1tag" className="title">
+              <h1 className="title">
                 Get in Touch
               </h1>
               <p>
