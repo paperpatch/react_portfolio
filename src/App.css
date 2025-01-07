@@ -26,24 +26,24 @@ body {
 }
 
 /* Navbar Styles */
-.navbar {
+nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 3px 10px black;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 65%;
+  margin: 0 auto;
   display: flex;
   background-color: var(--darkblue);
-  top: 0;
   width: 100%;
   padding: 10px 20px;
   justify-content: space-between;
   align-items: center;
   opacity: 97%;
-  box-shadow: 0 3px 10px black;
-  z-index: 1000;
-}
-
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
 }
 
 .navbar-brand {
@@ -90,7 +90,6 @@ body {
 
 .navbar-collapse {
   display: flex;
-  flex-direction: row;
 }
 
 .navbar-collapse.show {
@@ -102,24 +101,76 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
 .nav-item {
-  margin: 10px 0;
+  padding: 4px;
+  margin: 10px 10px;
 }
 
 .nav-link {
   color: white;
   text-decoration: none;
   font-size: 1.2em;
+  transition: color 0.3s, transform 0.3s
 }
 
 .nav-link:hover {
-  text-decoration: underline;
+  color: var(--darkcyan);
 }
 
+@media (max-width: 1700px) {
+  .navbar-container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+  }
+
+  .navbar-collapse {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: var(--darkblue);
+    box-shadow: 0 3px 10px black;
+  }
+
+  .navbar-collapse.show {
+    display: flex;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    padding: 10px 20px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-link {
+    padding: 10px 20px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-item:hover {
+    background-color: var(--cyan);
+  }
+}
+
+/* Resume */
 .resume-button {
   background: none;
   border: 2px solid var(--cyan);
@@ -127,15 +178,15 @@ body {
   border-radius: 5px;
   color: var(--cyan);
   cursor: pointer;
-  font-size: 1.2em;
-  text-decoration: none;
+  transition: color 0.3s, transform 0.3s, border-color 0.3s;
 }
 
 .resume-button:hover {
-  text-decoration: underline;
+  color: var(--darkcyan);
+  border-color: var(--darkcyan);
+  transform: scale(1.05);
 }
 
-/* PDF Modal Styles */
 .pdf-modal {
   position: fixed;
   top: 0;
@@ -153,8 +204,8 @@ body {
   background-color: white;
   border-radius: 5px;
   position: relative;
-  width: 80%;
-  max-width: 800px;
+  width: 100%;  
+  height: 100%;
 }
 
 .pdf-modal-close {
@@ -163,31 +214,6 @@ body {
   right: 10px;
   font-size: 1.5em;
   cursor: pointer;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .navbar-toggler {
-    display: block;
-  }
-
-  .navbar-collapse {
-    display: none;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .navbar-collapse.show {
-    display: flex;
-  }
-
-  .navbar-nav {
-    flex-direction: column;
-  }
-
-  .nav-item {
-    margin: 0 10px;
-  }
 }
 
 /* FONTS */
@@ -261,7 +287,6 @@ body {
 .jobs a,
 .feature a,
 .contacts a,
-.side-email a,
 .btn {
   color: var(--cyan);
   text-decoration: none;
@@ -273,7 +298,6 @@ body {
 .feature a:hover,
 .project-card a:hover,
 .contacts a:hover,
-.side-email a:hover,
 .btn:hover {
   color: var(--darkcyan);
 }
@@ -607,18 +631,13 @@ footer h4:hover {
   transition: all var(--timing) ease-in;
 }
 
-/* Media Query for Larger Desktop Screen and Smaller */
-
+/* Media Query */
 @media screen and (max-width: 1800px) {
   .about {
     width: 70%;
   }
-  .side-email {
-    left: 80%;
-  }
 }
 
-/* Media Query for Desktops and Smaller */
 @media screen and (max-width: 1280px) {
   .intro {
     width: 60%;
@@ -639,13 +658,8 @@ footer h4:hover {
     height: auto;
     opacity: 85%;
   }
-
-  .side-email {
-    left: 78%;
-  }
 }
 
-/* Media Query for Tablets Ipads Portrait Mode and Smaller */
 @media screen and (max-width: 1024px) {
   main {
     margin: 0 20px;
@@ -658,7 +672,6 @@ footer h4:hover {
   }
 }
 
-/* Media Query for Low Resolution Tablets and Ipads and Smaller */
 @media screen and (max-width: 767px) {
   main {
     margin: 0 5px;
@@ -719,7 +732,7 @@ footer h4:hover {
   }
 }
 
-/* Specially for dropdown menu collapse transition */
+/* Specifically for dropdown menu collapse transition */
 @media screen and (max-width: 576px) {
   .intro-name {
     font-weight: 600;

@@ -3,7 +3,6 @@ import { PDFObject } from "react-pdfobject";
 
 import resume from "../../assets/resume/PATRICK_CHEN_RESUME.pdf";
 
-
 function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
@@ -13,28 +12,43 @@ function Navigation() {
   const handleModalShow = () => setModalOpen(true);
 
   return (
-    <nav className="navbar sticky-top" id="navbar">
-      <div className="container">
-        <a className="navbar-brand" href="#home">Patrick</a>
+    <nav className="navbar" id="navbar">
+      <div className="navbar-container">
+        <a className="navbar-brand" href="#home">
+          Patrick
+        </a>
         <button className="navbar-toggler" onClick={handleMenuToggle}>
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className={`navbar-collapse ${menuOpen ? 'show' : ''}`}>
+        <div className={`navbar-collapse ${menuOpen ? "show" : ""}`}>
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#about">About</a>
+              <a className="nav-link" href="#about">
+                About
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#experience">Experience</a>
+              <a className="nav-link" href="#experience">
+                Experience
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#featured">Featured</a>
+              <a className="nav-link" href="#feature">
+                Feature
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact">Contact</a>
+              <a className="nav-link" href="#contact">
+                Contact
+              </a>
             </li>
             <li className="nav-item">
-              <button className="nav-link resume-button" onClick={handleModalShow}>Resume</button>
+              <button
+                className="nav-link resume-button"
+                onClick={handleModalShow}
+              >
+                Resume
+              </button>
             </li>
           </ul>
         </div>
@@ -42,8 +56,10 @@ function Navigation() {
       {modalOpen && (
         <div className="pdf-modal">
           <div className="pdf-modal-content">
-            <span className="pdf-modal-close" onClick={handleModalClose}>&times;</span>
-            <PDFObject url={resume} width="100%" height="500px" />
+            <span className="pdf-modal-close" onClick={handleModalClose}>
+              &times;
+            </span>
+            <PDFObject url={resume} width="100%" height="100%" />
           </div>
         </div>
       )}
