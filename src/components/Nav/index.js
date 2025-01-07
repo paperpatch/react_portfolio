@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { PDFObject } from "react-pdfobject";
 
 import resume from "../../assets/resume/PATRICK_CHEN_RESUME.pdf";
@@ -6,10 +6,28 @@ import resume from "../../assets/resume/PATRICK_CHEN_RESUME.pdf";
 function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
+  const menuRef = useRef(null);
+  const modalRef = useRef(null);
 
   const handleMenuToggle = () => setMenuOpen(!menuOpen);
   const handleModalClose = () => setModalOpen(false);
   const handleModalShow = () => setModalOpen(true);
+
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setMenuOpen(false);
+    }
+    if (modalRef.current && !modalRef.current.contains(event.target)) {
+      setModalOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="navbar" id="navbar">
@@ -20,7 +38,7 @@ function Navigation() {
         <button className="navbar-toggler" onClick={handleMenuToggle}>
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className={`navbar-collapse ${menuOpen ? "show" : ""}`}>
+        <div className={`navbar-collapse ${menuOpen ? "show" : ""}`} ref={menuRef}>
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link" href="#about">
@@ -55,7 +73,7 @@ function Navigation() {
       </div>
       {modalOpen && (
         <div className="pdf-modal">
-          <div className="pdf-modal-content">
+          <div className="pdf-modal-content" ref={modalRef}>
             <span className="pdf-modal-close" onClick={handleModalClose}>
               &times;
             </span>
