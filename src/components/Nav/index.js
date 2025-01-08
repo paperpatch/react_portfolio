@@ -8,12 +8,21 @@ function Navigation() {
   const [modalOpen, setModalOpen] = useState(false);
   const menuRef = useRef(null);
   const modalRef = useRef(null);
+  const togglerRef = useRef(null);
 
-  const handleMenuToggle = () => setMenuOpen(!menuOpen);
+  const handleMenuToggle = (event) => {
+    setMenuOpen((prev) => !prev);
+  };
+
+  console.log("menu open", menuOpen);
+
   const handleModalClose = () => setModalOpen(false);
   const handleModalShow = () => setModalOpen(true);
 
   const handleClickOutside = (event) => {
+    if (togglerRef.current && togglerRef.current.contains(event.target)) {
+      return;
+    }
     if (menuRef.current && !menuRef.current.contains(event.target)) {
       setMenuOpen(false);
     }
@@ -22,12 +31,21 @@ function Navigation() {
     }
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === "Escape") {
+      setMenuOpen(false);
+      setModalOpen(false);
+    }
+  };
+
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleKeyDown);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  });
 
   return (
     <nav className="navbar" id="navbar">
@@ -35,10 +53,17 @@ function Navigation() {
         <a className="navbar-brand" href="#home">
           Patrick
         </a>
-        <button className="navbar-toggler" onClick={handleMenuToggle}>
+        <button
+          className="navbar-toggler"
+          onClick={handleMenuToggle}
+          ref={togglerRef}
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className={`navbar-collapse ${menuOpen ? "show" : ""}`} ref={menuRef}>
+        <div
+          className={`navbar-collapse ${menuOpen ? "show" : ""}`}
+          ref={menuRef}
+        >
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link" href="#about">

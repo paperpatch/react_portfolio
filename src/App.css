@@ -30,6 +30,7 @@ nav {
   width: 100%;
   position: sticky;
   top: 0;
+  background-color: var(--darkblue);
   box-shadow: 0 3px 10px black;
   z-index: 1000;
 }
@@ -38,9 +39,8 @@ nav {
   max-width: 65%;
   margin: 0 auto;
   display: flex;
-  background-color: var(--darkblue);
   width: 100%;
-  padding: 10px 20px;
+  padding: 3px 20px;
   justify-content: space-between;
   align-items: center;
   opacity: 97%;
@@ -131,8 +131,8 @@ nav {
   .navbar-toggler {
     display: block;
     position: absolute;
-    top: 5px;
-    right: 20px;
+    top: 0px;
+    right: 50px;
   }
 
   .navbar-collapse {
@@ -221,7 +221,10 @@ nav {
   height: 100%;
 }
 
-/* FONTS */
+/* Intro */
+.intro {
+  height: 100vh;
+}
 
 .intro-title {
   color: var(--cyan);
@@ -323,7 +326,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 20%;
 }
 
 .arrow hr {
@@ -526,32 +529,6 @@ section {
   transform: scale(1.1);
 }
 
-.form {
-  margin: 5% 0 0 0;
-}
-
-.form-input {
-  width: 500px;
-  margin: 10px;
-  padding: 10px;
-}
-
-.form-button {
-  width: 500px;
-  margin: 15px;
-  padding: 12px;
-  font-size: 18px;
-  border-radius: 5px;
-  color: white;
-  background-color: var(--cyan);
-  border-color: var(--darkcyan);
-  transition: all 0.5s ease-out;
-}
-
-.form-button:hover {
-  background-color: var(--darkcyan);
-}
-
 /* FOOTER */
 
 footer {
@@ -679,11 +656,13 @@ footer h4:hover {
 
 @media screen and (max-width: 767px) {
   main {
-    margin: 0 5px;
+    width: 100%;
+    margin: 0px;
   }
 
   section {
-    padding: 3rem;
+    margin: 0;
+    padding: 0;
   }
 
   .intro {
@@ -727,10 +706,6 @@ footer h4:hover {
     margin: 0 auto;
   }
 
-  .form-input, .form-button {
-    width: 400px;
-  }
-
   footer, .social-container {
     padding: 1rem;
     margin: 0;
@@ -744,19 +719,11 @@ footer h4:hover {
     font-size: 60px;
   }
 
-  .form-input, .form-button {
-    width: 350px;
-  }
-
   .about,
   .jobs,
   .feature {
     width: 90%;
     margin: 0 auto;
     padding: 0;
-  }
-
-  section {
-    padding: 1rem;
   }
 }

@@ -1,8 +1,7 @@
-import React from "react";
+import { useEffect } from "react";
 import Typed from "react-typed";
 import "./App.css";
 
-// import components
 import Navigation from "./components/Nav";
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -10,10 +9,27 @@ import Featured from "./components/Featured";
 import Other from "./components/Other";
 
 function App() {
+  useEffect(() => {
+    const handleHashChange = () => {
+      const element = document.getElementById(
+        window.location.hash.substring(1)
+      );
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop - 80,
+          behavior: "smooth",
+        });
+      }
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
+
   return (
     <div>
       <Navigation />
-      <main>
+      <main id="home">
         <>
           <div className="intro">
             <h1 className="intro-title">Hi, my name is</h1>
