@@ -150,33 +150,26 @@ function About() {
   return (
     <section id="about" className="about">
       <h2 className="title">About Me</h2>
-      <div className="inner container">
-        <div className="row">
-          <div className="about-description col-lg-6 col-md-12">
-            <p>
-              Hi, I'm Pat! I've always had a passion for creating things on the
-              internet, and my journey into coding began when a friend suggested
-              I'd be a great fit for it. With a background as a civil engineer,
-              I decided to switch careers to pursue something that excites me —
-              developing software and building digital experiences.
-            </p>
-            <p>
-              I&apos;m particularly eager to dive deeper into machine learning,
-              algorithm scripting, and artificial intelligence, as I explore
-              where I can contribute in today&apos;s rapidly evolving tech
-              landscape.
-            </p>
-            <p>
-              Outside of coding, I enjoy playing volleyball and climbing, and I
-              also like to unwind with a good book in my free time.
-            </p>
-          </div>
-          <img
-            className="col-lg-6 col-md-12 m-auto profile-pic"
-            src={profileImage}
-            alt="Pat Chen"
-          />
+      <div className="about-container">
+        <div className="about-description">
+          <p>
+            Hi, I'm Pat! I've always had a passion for creating things on the
+            internet, and my journey into coding began when a friend suggested
+            I'd be a great fit for it. With a background as a civil engineer, I
+            decided to switch careers to pursue something that excites me —
+            developing software and building digital experiences.
+          </p>
+          <p>
+            I&apos;m particularly eager to dive deeper into machine learning,
+            algorithm scripting, and artificial intelligence, as I explore where
+            I can contribute in today&apos;s rapidly evolving tech landscape.
+          </p>
+          <p>
+            Outside of coding, I enjoy playing volleyball and climbing, and I
+            also like to unwind with a good book in my free time.
+          </p>
         </div>
+        <img className="about-img" src={profileImage} alt="About" />
       </div>
       <h2 className="title">Skills</h2>
       <div className="container">
