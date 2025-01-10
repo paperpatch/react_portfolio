@@ -149,7 +149,7 @@ function About() {
 
   return (
     <section id="about" className="about">
-      <h2 className="title">About Me</h2>
+      <h2 className="about-title">About Me</h2>
       <div className="about-container">
         <div className="about-description">
           <p>
@@ -171,11 +171,11 @@ function About() {
         </div>
         <img className="about-img" src={profileImage} alt="About" />
       </div>
-      <h2 className="title">Skills</h2>
+      <h2 className="skills-title">Skills</h2>
       <div className="skills-section">
         <h3>Languages:</h3>
         <hr />
-        <div className="skills-row">
+        <div className="skills-container">
           {skills.languages.map((language) => {
             <div className="skill" key={language.id}>
               {language.name}
@@ -188,7 +188,7 @@ function About() {
                     src={language.image}
                     alt={language.name}
                   />
-                  <label className="skill-name">{language.name}</label>
+                  <label className="skill-label">{language.name}</label>
                 </div>
               </React.Fragment>
             );
@@ -197,17 +197,17 @@ function About() {
 
         <h3>Frameworks:</h3>
         <hr />
-        <div className="row">
+        <div className="skills-container">
           {skills.library.map((library) => {
             return (
               <React.Fragment key={library.id}>
-                <div className="col">
+                <div className="skill">
                   <img
                     className="code-icon"
                     src={library.image}
                     alt={library.name}
                   />
-                  <label className="skill-name">{library.name}</label>
+                  <label className="skill-label">{library.name}</label>
                 </div>
               </React.Fragment>
             );
@@ -216,32 +216,32 @@ function About() {
 
         <h3>Databases & Cloud:</h3>
         <hr />
-        <div className="row">
+        <div className="skills-container">
           {skills.databases.map((database) => {
             return (
               <React.Fragment key={database.id}>
-                <div className="col">
+                <div className="skill">
                   <img
                     className="code-icon"
                     src={database.image}
                     alt={database.name}
                   />
-                  <label className="skill-name">{database.name}</label>
+                  <label className="skill-label">{database.name}</label>
                 </div>
               </React.Fragment>
             );
           })}
         </div>
 
-        <h3 className="row mt-5">Tools:</h3>
+        <h3>Tools:</h3>
         <hr />
-        <div className="row">
+        <div className="skills-container">
           {skills.tools.map((tool) => {
             return (
               <React.Fragment key={tool.id}>
-                <div className="col">
+                <div className="skill">
                   <img className="code-icon" src={tool.image} alt={tool.name} />
-                  <label className="skill-name">{tool.name}</label>
+                  <label className="skill-label">{tool.name}</label>
                 </div>
               </React.Fragment>
             );

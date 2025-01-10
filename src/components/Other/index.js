@@ -130,7 +130,7 @@ function Other() {
 
   return (
     <section id="projects" className="projects">
-      <h2 className="title text-center">Other Projects</h2>
+      <h2 className="other-title text-center">Other Projects</h2>
 
       <div className="container">
         <div className="row justify-content-evenly">

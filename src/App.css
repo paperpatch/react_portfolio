@@ -234,9 +234,8 @@ nav {
 
 .intro-title {
   color: var(--cyan);
-  padding: 5px 0;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .intro-name {
@@ -255,13 +254,7 @@ nav {
   padding: 30px 0px;
 }
 
-.title {
-  text-align: center;
-  font-size: 35px;
-  font-weight: bold;
-  padding: 1rem 0;
-  line-height: 2;
-}
+
 
 .text-sub {
   font-weight: 100;
@@ -288,11 +281,6 @@ nav {
   margin: 0;
   font-size: 15px;
   bottom: 0;
-}
-
-.contacts p {
-  margin: 0 auto;
-  line-height: 2;
 }
 
 /* UTILITIES */
@@ -360,6 +348,14 @@ section {
   width: 45%;
 }
 
+.about-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
 .about-container {
   display: flex;
   justify-content: space-between;
@@ -398,22 +394,35 @@ section {
   margin: 0.5rem;
 }
 
+.skills-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 3rem;
+}
+
 .skills-section {
   margin-top: 20px;
 }
 
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
 .skill {
-  flex: 1 1 30%;
-  margin: 10px;
+  flex: 1 1 10%;
+  margin: 0 auto;
   padding: 10px;
   border-radius: 5px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.skill-name {
-  width: 100%;
-  text-align: center;
-  margin: 0rem;
+.skill-label {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1800px) {
@@ -441,6 +450,10 @@ section {
     margin: 0 auto;
   }
 
+  .about-title {
+    margin: 0;
+  }
+
   .about-container {
     flex-direction: column;
     align-items: flex-start;
@@ -456,6 +469,19 @@ section {
   .about-img {
     max-width: 100%;
   }
+
+  .skills-title {
+    padding: 0;
+    line-height: 1;
+  }
+
+  .skills-section {
+    margin: 15px;
+  }
+
+  .skill {
+    flex: 1 1 20%;
+  }
 }
 
 /* WORK */
@@ -463,6 +489,13 @@ section {
 .jobs {
   height: 100%;
   width: 65%;
+}
+
+.experience-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 5rem;
 }
 
 .jobs article {
@@ -494,6 +527,13 @@ section {
 .feature {
   width: 60%;
   text-align: center;
+}
+
+.feature-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 5rem;
 }
 
 .feature-project {
@@ -528,6 +568,13 @@ section {
 }
 
 /* OTHER PROJECTS */
+
+.other-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 5rem;
+}
 
 .project-card {
   background-color: var(--blue);
@@ -579,6 +626,18 @@ section {
 .contacts {
   margin: 0 auto;
   text-align: center;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 5rem;
+}
+
+.contacts p {
+  margin: 0 auto;
+  line-height: 2.1;
 }
 
 .contacts .btn {

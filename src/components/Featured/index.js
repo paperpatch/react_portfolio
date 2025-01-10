@@ -44,7 +44,7 @@ function Featured() {
 
   return (
     <section id="feature" className="feature">
-      <h2 className="title">Featured Projects</h2>
+      <h2 className="feature-title">Featured Projects</h2>
       <div className="container">
         {featured.projects.map((featured) => {
           return (

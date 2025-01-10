@@ -58,7 +58,7 @@ function App() {
           <Other />
           <section id="contact">
             <div className="contacts">
-              <h1 className="title">Get in Touch</h1>
+              <h1 className="contact-title">Get in Touch</h1>
               <p>
                 I am looking for new opportunities to grow. My inbox is open.
               </p>

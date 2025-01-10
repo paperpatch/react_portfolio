@@ -79,7 +79,7 @@ function Experience() {
 
   return (
     <section id="experience" className="jobs">
-      <h2 className="title">Experience</h2>
+      <h2 className="experience-title">Experience</h2>
       <VerticalTimeline>
         {work.company.map((data) => {
           return (
