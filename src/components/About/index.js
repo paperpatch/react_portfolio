@@ -172,83 +172,80 @@ function About() {
         <img className="about-img" src={profileImage} alt="About" />
       </div>
       <h2 className="title">Skills</h2>
-      <div className="container">
+      <div className="skills-section">
+        <h3>Languages:</h3>
+        <hr />
+        <div className="skills-row">
+          {skills.languages.map((language) => {
+            <div className="skill" key={language.id}>
+              {language.name}
+            </div>;
+            return (
+              <React.Fragment key={language.id}>
+                <div className="skill">
+                  <img
+                    className="code-icon"
+                    src={language.image}
+                    alt={language.name}
+                  />
+                  <label className="skill-name">{language.name}</label>
+                </div>
+              </React.Fragment>
+            );
+          })}
+        </div>
+
+        <h3>Frameworks:</h3>
+        <hr />
         <div className="row">
-          <h3 className="row mt-2">Languages:</h3>
-          <hr />
-          <div className="row">
-            {skills.languages.map((language) => {
-              return (
-                <React.Fragment key={language.id}>
-                  <div className="col">
-                    <img
-                      className="code-icon"
-                      src={language.image}
-                      alt={language.name}
-                    />
-                    <label className="skill-name">{language.name}</label>
-                  </div>
-                </React.Fragment>
-              );
-            })}
-          </div>
+          {skills.library.map((library) => {
+            return (
+              <React.Fragment key={library.id}>
+                <div className="col">
+                  <img
+                    className="code-icon"
+                    src={library.image}
+                    alt={library.name}
+                  />
+                  <label className="skill-name">{library.name}</label>
+                </div>
+              </React.Fragment>
+            );
+          })}
+        </div>
 
-          <h3 className="row mt-5">Frameworks & Library:</h3>
-          <hr />
-          <div className="row">
-            {skills.library.map((library) => {
-              return (
-                <React.Fragment key={library.id}>
-                  <div className="col">
-                    <img
-                      className="code-icon"
-                      src={library.image}
-                      alt={library.name}
-                    />
-                    <label className="skill-name">{library.name}</label>
-                  </div>
-                </React.Fragment>
-              );
-            })}
-          </div>
+        <h3>Databases & Cloud:</h3>
+        <hr />
+        <div className="row">
+          {skills.databases.map((database) => {
+            return (
+              <React.Fragment key={database.id}>
+                <div className="col">
+                  <img
+                    className="code-icon"
+                    src={database.image}
+                    alt={database.name}
+                  />
+                  <label className="skill-name">{database.name}</label>
+                </div>
+              </React.Fragment>
+            );
+          })}
+        </div>
 
-          <h3 className="row mt-5">Databases & Cloud:</h3>
-          <hr />
-          <div className="row">
-            {skills.databases.map((database) => {
-              return (
-                <React.Fragment key={database.id}>
-                  <div className="col">
-                    <img
-                      className="code-icon"
-                      src={database.image}
-                      alt={database.name}
-                    />
-                    <label className="skill-name">{database.name}</label>
-                  </div>
-                </React.Fragment>
-              );
-            })}
-          </div>
-
-          <h3 className="row mt-5">Tools:</h3>
-          <hr />
-          <div className="row">
-            {skills.tools.map((tool) => {
-              return (
-                <React.Fragment key={tool.id}>
-                  <div className="col">
-                    <img
-                      className="code-icon"
-                      src={tool.image}
-                      alt={tool.name}
-                    />
-                    <label className="skill-name">{tool.name}</label>
-                  </div>
-                </React.Fragment>
-              );
-            })}
-          </div>
+        <h3 className="row mt-5">Tools:</h3>
+        <hr />
+        <div className="row">
+          {skills.tools.map((tool) => {
+            return (
+              <React.Fragment key={tool.id}>
+                <div className="col">
+                  <img className="code-icon" src={tool.image} alt={tool.name} />
+                  <label className="skill-name">{tool.name}</label>
+                </div>
+              </React.Fragment>
+            );
+          })}
         </div>
       </div>
     </section>

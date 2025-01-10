@@ -36,7 +36,7 @@ nav {
 }
 
 .navbar-container {
-  max-width: 65%;
+  max-width: 50%;
   margin: 0 auto;
   display: flex;
   width: 100%;
@@ -122,6 +122,12 @@ nav {
 }
 
 @media (max-width: 1700px) {
+  .navbar-container {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 1200px) {
   .navbar-container {
     max-width: 95%;
   }
@@ -371,6 +377,7 @@ section {
 
 .about-img {
   flex: 1;
+  margin: 0 auto;
   max-width: 350px;
   max-height: 350px;
   border: 5px solid var(--cyan);
@@ -391,10 +398,64 @@ section {
   margin: 0.5rem;
 }
 
+.skills-section {
+  margin-top: 20px;
+}
+
+.skill {
+  flex: 1 1 30%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
 .skill-name {
   width: 100%;
   text-align: center;
   margin: 0rem;
+}
+
+@media screen and (max-width: 1800px) {
+  .about {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .about {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about {
+    width: 90%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-description {
+    padding-right: 0px;
+    margin: 0 auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-img {
+    max-width: 100%;
+  }
 }
 
 /* WORK */
@@ -616,18 +677,12 @@ footer h4:hover {
 }
 
 /* Media Query */
-@media screen and (max-width: 1800px) {
-  .about {
-    width: 70%;
-  }
-}
 
 @media screen and (max-width: 1280px) {
   .intro {
     width: 60%;
   }
 
-  .about,
   .feature,
   .jobs {
     width: 80%;
@@ -650,7 +705,6 @@ footer h4:hover {
   }
 
   .intro,
-  .about,
   .jobs {
     width: 90%;
   }
@@ -692,15 +746,9 @@ footer h4:hover {
     padding-bottom: 0%;
   }
 
-  .about,
   .jobs,
   .feature {
     width: 100%;
-    margin: 0 auto;
-  }
-  
-  .about-description {
-    padding-right: 0px;
     margin: 0 auto;
   }
 
@@ -717,7 +765,6 @@ footer h4:hover {
     font-size: 60px;
   }
 
-  .about,
   .jobs,
   .feature {
     width: 90%;
