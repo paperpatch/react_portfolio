@@ -14,8 +14,6 @@ function Navigation() {
     setMenuOpen((prev) => !prev);
   };
 
-  console.log("menu open", menuOpen);
-
   const handleModalClose = () => setModalOpen(false);
   const handleModalShow = () => setModalOpen(true);
 
