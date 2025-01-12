@@ -1,6 +1,6 @@
 # Portfolio
 
-Patrick Chen's [personal portfolio](https://patrickchen.dev/). Uses React state, props, hooks and reusable UI components.
+My [personal portfolio](https://patrickchen.dev/). Uses React state, props, hooks and reusable UI components.
 
 ![Screenshot](/public/portfolio_screenshot.png)
 
