@@ -23,9 +23,6 @@ Uses the following tools in this repository:
 
 See my [portfolio!](https://patrickchen.dev/)
 
-Check the rest of my [GitHub profile](https://github.com/paperpatch) for more of my repositories!
-
-
 ## Contributing
 :octocat:
 Made by Patrick Chen
