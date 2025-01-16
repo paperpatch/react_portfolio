@@ -25,4 +25,4 @@ See my [portfolio!](https://patrickchen.dev/)
 
 ## Contributing
 :octocat:
-Made by Patrick Chen
+Made by Pat
