@@ -1,6 +1,6 @@
 # Portfolio
 
-My [personal portfolio](https://patrickchen.dev/). Uses React state, props, hooks and reusable UI components.
+See my personal portfolio [here](https://patrickchen.dev/). Uses React state, props, hooks and reusable UI components.
 
 ![Screenshot](/public/portfolio_screenshot.png)
 
