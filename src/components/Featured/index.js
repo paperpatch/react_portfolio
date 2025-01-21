@@ -8,7 +8,7 @@ function Featured() {
   const featured = {
     projects: [
       {
-        id: "sorting_visualizer",
+        id: 1,
         name: "Sorting Visualizer",
         github: "https://github.com/paperpatch/sorting_visualizer",
         deploy: "https://paperpatch.github.io/sorting_visualizer/",
@@ -19,7 +19,7 @@ function Featured() {
         skills: "JavaScript React zustand @emotion",
       },
       {
-        id: "genki_notes",
+        id: 2,
         name: "Genki Notes",
         github: "https://github.com/paperpatch/genki_notes",
         deploy: "https://paperpatch.github.io/genki_notes/",
@@ -30,7 +30,7 @@ function Featured() {
         skills: "JavaScript React",
       },
       {
-        id: "key_input",
+        id: 3,
         name: "Key Input",
         github: "https://github.com/paperpatch/key_input",
         deploy: "https://paperpatch.github.io/key_input/",
@@ -46,48 +46,39 @@ function Featured() {
     <section id="feature" className="feature">
       <h2 className="feature-title">Featured Projects</h2>
       <div className="container">
-        {featured.projects.map((featured) => {
+        {featured.projects.map((project) => {
           return (
-            <React.Fragment key={featured.id}>
-              <div className="card mb-3 text-start feature-project">
-                <div className="row">
-                  <div className="col-12 col-lg-5">
-                    <div className="card-header">Featured Project</div>
-                    <div className="card-body">
-                      <h3 className="card-title">
-                        <a
-                          href={featured.deploy}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          {featured.name}
-                        </a>
-                      </h3>
-                      <p className="card-text">{featured.description}</p>
-                      <p>
-                        <small className="text-skill">{featured.skills}</small>
-                      </p>
-                      <a
-                        href={featured.github}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <Github className="bi bi-github fa-lg"></Github>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="col-12 col-lg-7">
-                    <a href={featured.deploy} target="_blank" rel="noreferrer">
-                      <img
-                        src={featured.image}
-                        className="rounded float-end"
-                        alt={featured.alt}
-                      />
+            <div
+              className="card mb-3 text-start feature-project"
+              key={project.id}
+            >
+              <div className="text-container">
+                <div className="card-header">Featured Project</div>
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <a href={project.deploy} target="_blank" rel="noreferrer">
+                      {project.name}
                     </a>
-                  </div>
+                  </h3>
+                  <p className="card-text">{project.description}</p>
+                  <p>
+                    <small className="text-skill">{project.skills}</small>
+                  </p>
+                  <a href={project.github} target="_blank" rel="noreferrer">
+                    <Github className="bi bi-github fa-lg"></Github>
+                  </a>
                 </div>
               </div>
-            </React.Fragment>
+              <div className="col-12 col-lg-7">
+                <a href={project.deploy} target="_blank" rel="noreferrer">
+                  <img
+                    src={project.image}
+                    className="rounded float-end"
+                    alt={project.alt}
+                  />
+                </a>
+              </div>
+            </div>
           );
         })}
       </div>
