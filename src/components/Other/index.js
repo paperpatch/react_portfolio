@@ -132,7 +132,7 @@ function Other() {
     <section id="projects" className="projects">
       <h2 className="other-title text-center">Other Projects</h2>
 
-      <div className="container">
+      <div className="other-container">
         <div className="row justify-content-evenly">
           {projects.other.map((other) => {
             return (
