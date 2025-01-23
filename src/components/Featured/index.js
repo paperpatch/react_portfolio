@@ -48,7 +48,7 @@ function Featured() {
       <div className="container">
         {featured.projects.map((project) => (
           <div
-            className="card mb-3 text-start feature-project"
+            className="feature-project"
             key={project.id}
           >
             <div className="text-container">

@@ -653,10 +653,9 @@ section {
 }
 
 .other-container .card-header {
-  font-size: 16px;
-  color: var(--cyan);
-  font-weight: lighter;
-  padding-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .other-container .card-title {
@@ -688,10 +687,6 @@ section {
 .project-card a:hover {
   color: var(--darkcyan);
   transition: all 0.5s ease-out;
-}
-
-.card-link {
-  margin-bottom: 10px;
 }
 
 .other-projects-btn {
