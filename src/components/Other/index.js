@@ -48,7 +48,7 @@ function Other() {
       alt: "Trackend Project",
       description:
         "Issue Tracker Ticketing System with a CMS (Content Management System) style. Uses authentication and MVC paradigm, using Handlebars.js as template, Sequelize as ORM (Object-Relational Mapping) and Express-Session for authentication.",
-      skills: "Bootstrap-Table Handlebars Sequelize MySQL Express API Heroku",
+      skills: "Handlebars MySQL Express API Heroku",
     },
     {
       id: "book_search_engine",
@@ -58,7 +58,7 @@ function Other() {
       // deploy: "https://booksearch-engine-app.herokuapp.com/",
       description:
         "Constructed a MERN application to search up books. Users are able to sign up, login in, and save books to their profile. Uses React, MongoDB and Apollo Server to power the searches.",
-      skills: "JavaScript React MongoDB GraphQL Apollo Heroku",
+      skills: "React MongoDB GraphQL Apollo Heroku",
     },
   ];
 
@@ -133,16 +133,16 @@ function Other() {
           return (
             <div key={other.id} className="project-wrapper">
               <div className="project-card">
-                <div className="card-body">
+                <div className="card-header">
                   <Folder size={56} />
                   <a href={other.deploy} target="_blank" rel="noreferrer">
                     <BoxArrowUpRight size={42} />
                   </a>
-                  <a href={other.deploy} target="_blank" rel="noreferrer">
-                    <h5 className="card-title">{other.name}</h5>
-                  </a>
-                  <p className="card-text">{other.description}</p>
                 </div>
+                <a href={other.deploy} target="_blank" rel="noreferrer">
+                  <h5 className="card-title">{other.name}</h5>
+                </a>
+                <p className="card-text">{other.description}</p>
                 <div className="skills-container">
                   <p className="text-skill">{other.skills}</p>
                   <a href={other.github} target="_blank" rel="noreferrer">
@@ -159,16 +159,16 @@ function Other() {
             return (
               <div key={other.id}>
                 <div className="project-card">
-                  <div className="card-body">
-                    <Folder className="col-3" size={56} />
+                  <div className="card-header">
+                    <Folder size={56} />
                     <a href={other.deploy} target="_blank" rel="noreferrer">
                       <BoxArrowUpRight size={42} />
                     </a>
-                    <a href={other.deploy} target="_blank" rel="noreferrer">
-                      <h5 className="card-title">{other.name}</h5>
-                    </a>
-                    <p className="card-text">{other.description}</p>
                   </div>
+                  <a href={other.deploy} target="_blank" rel="noreferrer">
+                    <h5 className="card-title">{other.name}</h5>
+                  </a>
+                  <p className="card-text">{other.description}</p>
                   <div className="skills-container">
                     <p className="text-skill">{other.skills}</p>
                     <a href={other.github} target="_blank" rel="noreferrer">
@@ -180,10 +180,7 @@ function Other() {
             );
           })}
       </div>
-      <button
-        className="other-projects-btn"
-        onClick={() => setShowMore(!showMore)}
-      >
+      <button onClick={() => setShowMore(!showMore)}>
         {showMore ? "Show Less" : "Show More"}
       </button>
     </section>
