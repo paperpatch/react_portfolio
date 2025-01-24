@@ -131,7 +131,7 @@ function Other() {
       <div className="other-container">
         {projects.map((other) => {
           return (
-            <React.Fragment key={other.id}>
+            <div key={other.id} className="project-wrapper">
               <div className="project-card">
                 <div className="card-body">
                   <Folder size={56} />
@@ -150,14 +150,14 @@ function Other() {
                   </a>
                 </div>
               </div>
-            </React.Fragment>
+            </div>
           );
         })}
 
         {showMore &&
           additional.other.map((other) => {
             return (
-              <React.Fragment key={other.id}>
+              <div key={other.id}>
                 <div className="project-card">
                   <div className="card-body">
                     <Folder className="col-3" size={56} />
@@ -176,18 +176,16 @@ function Other() {
                     </a>
                   </div>
                 </div>
-              </React.Fragment>
+              </div>
             );
           })}
       </div>
-      <div className="">
-        {/* <Button
-          className="other-projects-btn"
-          onClick={() => setShowMore(!showMore)}
-        >
-          {showMore ? "Show Less" : "Show More"}
-        </Button> */}
-      </div>
+      <button
+        className="other-projects-btn"
+        onClick={() => setShowMore(!showMore)}
+      >
+        {showMore ? "Show Less" : "Show More"}
+      </button>
     </section>
   );
 }

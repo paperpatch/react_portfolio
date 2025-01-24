@@ -652,10 +652,10 @@ section {
   padding-top: 5rem;
 }
 
-.other-container .card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.other-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
 }
 
 .other-container .card-title {
@@ -668,10 +668,16 @@ section {
 
 .project-card {
   background-color: var(--blue);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 25rem;
   height: 20rem;
   margin: 0.5rem;
+  padding: 20px;
   transition: all 1s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card a {
@@ -690,6 +696,7 @@ section {
 }
 
 .other-projects-btn {
+  display: block;
   width: 200px;
   margin: 0 auto;
   margin-top: 50px;
@@ -699,6 +706,7 @@ section {
   color: white;
   background-color: var(--cyan);
   border-color: var(--darkcyan);
+  transition: background-color 0.3s ease;
 }
 
 .other-projects-btn:hover {
