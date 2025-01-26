@@ -77,7 +77,7 @@ function App() {
         </>
       </main>
       <footer>
-        <nav className="social-container">
+        <div className="social-container">
           <ul className="social-icons">
             <li>
               <a
@@ -109,7 +109,7 @@ function App() {
           </ul>
           <span>© 2022 Patrick Chen</span>
           <br />
-        </nav>
+        </div>
       </footer>
     </div>
   );
