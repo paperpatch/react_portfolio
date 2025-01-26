@@ -83,7 +83,8 @@ function App() {
               <a
                 href="https://www.linkedin.com/in/patchen21/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
               >
                 <i className="fa fa-linkedin"></i>
               </a>
@@ -92,7 +93,8 @@ function App() {
               <a
                 href="https://github.com/paperpatch"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
               >
                 <i className="fa fa-github"></i>
               </a>
@@ -101,13 +103,16 @@ function App() {
               <a
                 href="https://codepen.io/paperpatch"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label="CodePen"
               >
                 <i className="fa fa-codepen"></i>
               </a>
             </li>
           </ul>
-          <span>© 2022 Patrick Chen</span>
+          <div className="footer-text">
+            <p>&copy; 2022 Patrick Chen. All rights reserved.</p>
+          </div>
           <br />
         </div>
       </footer>

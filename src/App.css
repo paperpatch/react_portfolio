@@ -865,6 +865,10 @@ footer h4:hover {
   transition: all var(--timing) ease-in;
 }
 
+.footer-text {
+  font-size: 15px;
+}
+
 /* Media Query */
 
 @media screen and (max-width: 1280px) {

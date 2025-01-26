@@ -47,15 +47,16 @@ function Featured() {
       <h2 className="feature-title">Featured Projects</h2>
       <div className="container">
         {featured.projects.map((project) => (
-          <div
-            className="feature-project"
-            key={project.id}
-          >
+          <div className="feature-project" key={project.id}>
             <div className="text-container">
               <div className="card-header">Featured Project</div>
               <div className="card-body">
                 <h3 className="card-title">
-                  <a href={project.deploy} target="_blank" rel="noreferrer">
+                  <a
+                    href={project.deploy}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {project.name}
                   </a>
                 </h3>
@@ -67,7 +68,7 @@ function Featured() {
                   <a
                     href={project.github}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="github-icon"
                   >
                     <img src={icon_github} alt="Github" />
@@ -76,7 +77,11 @@ function Featured() {
               </div>
             </div>
             <div className="image-container">
-              <a href={project.deploy} target="_blank" rel="noreferrer">
+              <a
+                href={project.deploy}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={project.image} alt={project.alt} />
               </a>
             </div>

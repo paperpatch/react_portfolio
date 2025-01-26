@@ -135,17 +135,29 @@ function Other() {
               <div className="project-card">
                 <div className="card-header">
                   <Folder size={56} />
-                  <a href={other.deploy} target="_blank" rel="noreferrer">
+                  <a
+                    href={other.deploy}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <BoxArrowUpRight size={42} />
                   </a>
                 </div>
-                <a href={other.deploy} target="_blank" rel="noreferrer">
+                <a
+                  href={other.deploy}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <h5 className="card-title">{other.name}</h5>
                 </a>
                 <p className="card-text">{other.description}</p>
                 <div className="skills-container">
                   <p className="text-skill">{other.skills}</p>
-                  <a href={other.github} target="_blank" rel="noreferrer">
+                  <a
+                    href={other.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Github size={32} />
                   </a>
                 </div>
@@ -161,17 +173,29 @@ function Other() {
                 <div className="project-card">
                   <div className="card-header">
                     <Folder size={56} />
-                    <a href={other.deploy} target="_blank" rel="noreferrer">
+                    <a
+                      href={other.deploy}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <BoxArrowUpRight size={42} />
                     </a>
                   </div>
-                  <a href={other.deploy} target="_blank" rel="noreferrer">
+                  <a
+                    href={other.deploy}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <h5 className="card-title">{other.name}</h5>
                   </a>
                   <p className="card-text">{other.description}</p>
                   <div className="skills-container">
                     <p className="text-skill">{other.skills}</p>
-                    <a href={other.github} target="_blank" rel="noreferrer">
+                    <a
+                      href={other.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Github size={32} />
                     </a>
                   </div>
