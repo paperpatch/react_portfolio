@@ -216,8 +216,8 @@ nav {
 
 .pdf-modal-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0px;
+  right: 6px;
   font-size: 1.5em;
   cursor: pointer;
 }
