@@ -33,117 +33,33 @@ import icon_jira from "../../assets/icons/tools/icon-jira.svg";
 function About() {
   const skills = {
     languages: [
-      {
-        id: "html",
-        name: "HTML",
-        image: icon_html,
-      },
-      {
-        id: "css",
-        name: "CSS",
-        image: icon_css,
-      },
-      {
-        id: "javascript",
-        name: "JavaScript",
-        image: icon_javascript,
-      },
-      {
-        id: "typescript",
-        name: "Typescript",
-        image: icon_typescript,
-      },
-      {
-        id: "java",
-        name: "Java",
-        image: icon_java,
-      },
+      { id: 1, name: "HTML", image: icon_html },
+      { id: 2, name: "CSS", image: icon_css },
+      { id: 3, name: "JavaScript", image: icon_javascript },
+      { id: 4, name: "Typescript", image: icon_typescript },
+      { id: 5, name: "Java", image: icon_java },
     ],
     library: [
-      {
-        id: "nodejs",
-        name: "Node.JS",
-        image: icon_nodejs,
-      },
-      {
-        id: "jest",
-        name: "Jest",
-        image: icon_jest,
-      },
-      {
-        id: "bootstrap",
-        name: "Bootstrap",
-        image: icon_bootstrap,
-      },
-      {
-        id: "handlebars",
-        name: "Handlebars",
-        image: icon_handlebars,
-      },
-      {
-        id: "react",
-        name: "React",
-        image: icon_react,
-      },
-      {
-        id: "spring",
-        name: "Spring",
-        image: icon_spring,
-      },
+      { id: 1, name: "Node.JS", image: icon_nodejs },
+      { id: 2, name: "Jest", image: icon_jest },
+      { id: 3, name: "Bootstrap", image: icon_bootstrap },
+      { id: 4, name: "Handlebars", image: icon_handlebars },
+      { id: 5, name: "React", image: icon_react },
+      { id: 6, name: "Spring", image: icon_spring },
     ],
     databases: [
-      {
-        id: "mysql",
-        name: "MySQL",
-        image: icon_mysql,
-      },
-      {
-        id: "mongodb",
-        name: "MongoDB",
-        image: icon_mongo,
-      },
-      {
-        id: "postgres",
-        name: "PostgresSQL",
-        image: icon_postgres,
-      },
-      {
-        id: "heroku",
-        name: "Heroku",
-        image: icon_heroku,
-      },
-      {
-        id: "aws",
-        name: "AWS",
-        image: icon_aws,
-      },
+      { id: 1, name: "MySQL", image: icon_mysql },
+      { id: 2, name: "MongoDB", image: icon_mongo },
+      { id: 3, name: "PostgresSQL", image: icon_postgres },
+      { id: 4, name: "Heroku", image: icon_heroku },
+      { id: 5, name: "AWS", image: icon_aws },
     ],
     tools: [
-      {
-        id: "gitbash",
-        name: "Git Bash",
-        image: icon_bash,
-      },
-      {
-        id: "github",
-        name: "GitHub",
-        image: icon_github,
-      },
-      {
-        id: "npm",
-        name: "npm",
-        image: icon_npm,
-      },
-      {
-        id: "jira",
-        name: "Jira",
-        image: icon_jira,
-      },
-      {
-        id: "docker",
-        name: "Docker",
-        image: icon_docker,
-      },
+      { id: 1, name: "Git Bash", image: icon_bash },
+      { id: 2, name: "GitHub", image: icon_github },
+      { id: 3, name: "npm", image: icon_npm },
+      { id: 4, name: "Jira", image: icon_jira },
+      { id: 5, name: "Docker", image: icon_docker },
     ],
   };
 
@@ -176,76 +92,57 @@ function About() {
         <h3>Languages:</h3>
         <hr />
         <div className="skills-container">
-          {skills.languages.map((language) => {
-            <div className="skill" key={language.id}>
-              {language.name}
-            </div>;
-            return (
-              <React.Fragment key={language.id}>
-                <div className="skill">
-                  <img
-                    className="code-icon"
-                    src={language.image}
-                    alt={language.name}
-                  />
-                  <label className="skill-label">{language.name}</label>
-                </div>
-              </React.Fragment>
-            );
-          })}
+          {skills.languages.map((language) => (
+            <div className="skill">
+              <img
+                className="code-icon"
+                src={language.image}
+                alt={language.name}
+              />
+              <label className="skill-label">{language.name}</label>
+            </div>
+          ))}
         </div>
 
         <h3>Frameworks:</h3>
         <hr />
         <div className="skills-container">
-          {skills.library.map((library) => {
-            return (
-              <React.Fragment key={library.id}>
-                <div className="skill">
-                  <img
-                    className="code-icon"
-                    src={library.image}
-                    alt={library.name}
-                  />
-                  <label className="skill-label">{library.name}</label>
-                </div>
-              </React.Fragment>
-            );
-          })}
+          {skills.library.map((library) => (
+            <div className="skill">
+              <img
+                className="code-icon"
+                src={library.image}
+                alt={library.name}
+              />
+              <label className="skill-label">{library.name}</label>
+            </div>
+          ))}
         </div>
 
         <h3>Databases & Cloud:</h3>
         <hr />
         <div className="skills-container">
-          {skills.databases.map((database) => {
-            return (
-              <React.Fragment key={database.id}>
-                <div className="skill">
-                  <img
-                    className="code-icon"
-                    src={database.image}
-                    alt={database.name}
-                  />
-                  <label className="skill-label">{database.name}</label>
-                </div>
-              </React.Fragment>
-            );
-          })}
+          {skills.databases.map((database) => (
+            <div className="skill">
+              <img
+                className="code-icon"
+                src={database.image}
+                alt={database.name}
+              />
+              <label className="skill-label">{database.name}</label>
+            </div>
+          ))}
         </div>
 
         <h3>Tools:</h3>
         <hr />
         <div className="skills-container">
-          {skills.tools.map((tool) => {
-            return (
-              <React.Fragment key={tool.id}>
-                <div className="skill">
-                  <img className="code-icon" src={tool.image} alt={tool.name} />
-                  <label className="skill-label">{tool.name}</label>
-                </div>
-              </React.Fragment>
-            );
-          })}
+          {skills.tools.map((tool) => (
+            <div className="skill">
+              <img className="code-icon" src={tool.image} alt={tool.name} />
+              <label className="skill-label">{tool.name}</label>
+            </div>
+          ))}
         </div>
       </div>
     </section>
