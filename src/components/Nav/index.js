@@ -10,7 +10,7 @@ function Navigation() {
   const modalRef = useRef(null);
   const togglerRef = useRef(null);
 
-  const handleMenuToggle = (event) => {
+  const handleMenuToggle = () => {
     setMenuOpen((prev) => !prev);
   };
 
@@ -55,6 +55,7 @@ function Navigation() {
           className="navbar-toggler"
           onClick={handleMenuToggle}
           ref={togglerRef}
+          aria-label="Toggle navigation menu"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -87,6 +88,7 @@ function Navigation() {
               <button
                 className="nav-link resume-button"
                 onClick={handleModalShow}
+                aria-label="View resume"
               >
                 Resume
               </button>
