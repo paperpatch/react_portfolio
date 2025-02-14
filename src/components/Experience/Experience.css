@@ -1,0 +1,36 @@
+/* Experience */
+.jobs {
+  height: 100%;
+  width: 65%;
+}
+
+.experience-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 5rem;
+}
+
+.jobs article {
+  padding: 20px 0;
+}
+
+.range {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.jobs li {
+  line-height: 1.5;
+  list-style-type: none;
+  position: relative;
+  padding-left: 15px;
+}
+
+.jobs li:before {
+  content: "\25BA \0020";
+  font-size: 10px;
+  position: absolute;
+  top: 5px;
+  left: -10px;
+}

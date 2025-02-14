@@ -1,5 +1,6 @@
 import React from "react";
 import { Book, Briefcase, HourglassBottom } from "react-bootstrap-icons";
+import "./Experience.css";
 
 import {
   VerticalTimeline,
