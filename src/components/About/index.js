@@ -19,7 +19,7 @@ import icon_spring from "../../assets/icons/frameworks/icon-spring.svg";
 // Databases & Cloud
 import icon_mysql from "../../assets/icons/databases/icon-mysql.svg";
 import icon_mongo from "../../assets/icons/databases/icon-mongo.svg";
-import icon_postgres from "../../assets/icons/databases/icon-postgres.svg";
+import icon_postgresql from "../../assets/icons/databases/icon-postgresql.svg";
 import icon_heroku from "../../assets/icons/databases/icon-heroku.svg";
 import icon_aws from "../../assets/icons/databases/icon-aws.svg";
 
@@ -50,7 +50,7 @@ function About() {
     databases: [
       { id: 1, name: "MySQL", image: icon_mysql },
       { id: 2, name: "MongoDB", image: icon_mongo },
-      { id: 3, name: "PostgresSQL", image: icon_postgres },
+      { id: 3, name: "PostgreSQL", image: icon_postgresql },
       { id: 4, name: "Heroku", image: icon_heroku },
       { id: 5, name: "AWS", image: icon_aws },
     ],
