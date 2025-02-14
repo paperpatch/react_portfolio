@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Github, Folder, BoxArrowUpRight } from "react-bootstrap-icons";
+import "./Other.css";
 
 function Other() {
   const projects = [
