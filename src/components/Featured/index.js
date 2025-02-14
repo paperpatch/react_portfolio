@@ -3,6 +3,7 @@ import icon_github from "../../assets/icons/tools/icon-github.svg";
 import img_genki from "../../assets/projects/genki-screenshot.jpg";
 import img_input from "../../assets/projects/key-input-wide.webp";
 import img_sorting from "../../assets/projects/sorting-visualizer-screenshot.png";
+import "./Featured.css";
 
 function Featured() {
   const featured = [
