@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { PDFObject } from "react-pdfobject";
+import "./Nav.css";
 
 import resume from "../../assets/resume/PATRICK_CHEN_RESUME.pdf";
 
