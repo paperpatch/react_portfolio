@@ -1,5 +1,6 @@
 import React from "react";
 import profileImage from "../../assets/profile/profile-pic-2.webp";
+import "./About.css";
 
 // Languages
 import icon_html from "../../assets/icons/languages/icon-html.svg";
